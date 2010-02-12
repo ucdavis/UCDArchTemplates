@@ -95,6 +95,25 @@
     <Content Include="Views\Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="CodeTemplates\AddController\Controller.tt">
+    </None>
+    <None Include="CodeTemplates\AddView\Create.tt">
+    </None>
+    <None Include="CodeTemplates\AddView\Delete.tt">
+    </None>
+    <None Include="CodeTemplates\AddView\Details.tt">
+    </None>
+    <None Include="CodeTemplates\AddView\Edit.tt">
+    </None>
+    <None Include="CodeTemplates\AddView\Empty.tt">
+    </None>
+    <None Include="CodeTemplates\AddView\List.tt">
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{B4F97281-0DBD-4835-9ED8-7DFB966E87FF}" />
+  </ItemGroup>
+  <ItemGroup>
     <Folder Include="App_Data\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
