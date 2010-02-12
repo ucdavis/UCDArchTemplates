@@ -1,5 +1,6 @@
 using System;
 using System.ComponentModel.DataAnnotations;
+using UCDArch.Core.DomainModel;
 
 namespace UCDArchTemplates.Models
 {

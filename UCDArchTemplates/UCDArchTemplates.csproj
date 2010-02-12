@@ -59,19 +59,24 @@
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
     <Reference Include="System.Web.Mobile" />
+    <Reference Include="UCDArch.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=667f3cb07abadf4b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Bin\UCDArch.Core.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\CustomerController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Customer.cs" />
-    <Compile Include="Models\DomainObjectWithTypedId.cs" />
     <Compile Include="Models\Order.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
+    <Content Include="Views\Customer\Index.aspx" />
     <Content Include="Web.config" />
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\jquery-1.4.1.js" />
@@ -95,19 +100,19 @@
     <Content Include="Views\Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="CodeTemplates\AddController\Controller.tt">
+    <None Include="CodeTemplates\AddController\ControllerLocal.tt">
     </None>
-    <None Include="CodeTemplates\AddView\Create.tt">
+    <None Include="CodeTemplates\AddView\CreateLocal.tt">
     </None>
-    <None Include="CodeTemplates\AddView\Delete.tt">
+    <None Include="CodeTemplates\AddView\DeleteLocal.tt">
     </None>
-    <None Include="CodeTemplates\AddView\Details.tt">
+    <None Include="CodeTemplates\AddView\DetailsLocal.tt">
     </None>
-    <None Include="CodeTemplates\AddView\Edit.tt">
+    <None Include="CodeTemplates\AddView\EditLocal.tt">
     </None>
-    <None Include="CodeTemplates\AddView\Empty.tt">
+    <None Include="CodeTemplates\AddView\EmptyLocal.tt">
     </None>
-    <None Include="CodeTemplates\AddView\List.tt">
+    <None Include="CodeTemplates\AddView\ListLocal.tt">
     </None>
   </ItemGroup>
   <ItemGroup>

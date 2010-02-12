@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.30729</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>eda86fe2-8812-4127-845b-cc75aa8fbf52</ProjectGuid>
+    <ProjectGuid>{1775053E-D290-4591-8399-EDB363B754C6}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>UCDArchTemplates.Test</RootNamespace>

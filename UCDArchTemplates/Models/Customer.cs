@@ -1,5 +1,7 @@
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using UCDArch.Core.DomainModel;
 
 namespace UCDArchTemplates.Models
 {
@@ -51,5 +53,25 @@ namespace UCDArchTemplates.Models
             Id = assignedId.Trim().ToUpper();
         }
 
+        public static IList<Customer> GetAll()
+        {
+            var customerList = new List<Customer>();
+
+            for (int i = 1; i < 6; i++)
+            {
+                var newCustomer = new Customer
+                                      {
+                                          CompanyName = "Company" + i,
+                                          ContactName = "Contact" + i,
+                                          Country = "USA",
+                                          Fax = "555-5555",
+                                          Id = i.ToString()
+                                      };
+
+                customerList.Add(newCustomer);
+            }
+
+            return customerList;
+        }
     }
 }
