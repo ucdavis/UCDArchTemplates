@@ -31,6 +31,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Bin", "Bin", "{7FB15CBE-8B8
 		Bin\Spring.Aop.dll = Bin\Spring.Aop.dll
 		Bin\Spring.Core.dll = Bin\Spring.Core.dll
 		Bin\System.Data.SQLite.DLL = Bin\System.Data.SQLite.DLL
+		Bin\Telerik.Web.Mvc.dll = Bin\Telerik.Web.Mvc.dll
 		Bin\UCDArch.Core.dll = Bin\UCDArch.Core.dll
 		Bin\UCDArch.Core.NHibernateValidator.dll = Bin\UCDArch.Core.NHibernateValidator.dll
 		Bin\UCDArch.Data.dll = Bin\UCDArch.Data.dll

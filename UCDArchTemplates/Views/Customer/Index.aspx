@@ -1,4 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage<IEnumerable<UCDArchTemplates.Models.Customer>>" %>
+<%@ Import Namespace="Telerik.Web.Mvc.UI"%>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="TitleContent" runat="server">
 	Index3
@@ -6,7 +7,22 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
 
-    <h2>Index3</h2>
+    <h2>Index</h2>
+
+    <% Html.Telerik().Grid(Model) 
+            .Name("CustomerList")
+            .PrefixUrlParameters(false) //True if >0 sortable/pageable grids
+            .Columns(col =>
+                         {
+                             col.Add(x => x.CompanyName);
+                             col.Add(x => x.ContactName);
+                             col.Add(x => x.Country);
+                             col.Add(x => x.Fax);
+                         })
+            //.Pageable()
+            //.Sortable()
+            .Render(); 
+        %>
 
     <table>
         <tr>
