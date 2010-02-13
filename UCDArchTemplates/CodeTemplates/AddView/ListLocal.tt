@@ -93,57 +93,6 @@ if(!String.IsNullOrEmpty(mvcViewDataTypeGenericString)) {
             .Render(); 
         %>
 
-    <table>
-        <tr>
-            <th></th>
-<#
-	foreach(KeyValuePair<string, string> property in properties) {
-#>
-            <th>
-                <#= property.Key #>
-            </th>
-<#
-    }
-#>
-        </tr>
-
-    <% foreach (var item in Model) { %>
-    
-        <tr>
-<#
-	List<string> primaryKeys = GetEntityKeyProperties(mvcHost.ViewDataType);
-	if(primaryKeys.Count > 0) {
-#>
-            <td>
-                <%<#= nugget #> Html.ActionLink("Edit", "Edit", new { id=item.<#= primaryKeys[0] #> }) %> |
-                <%<#= nugget #> Html.ActionLink("Details", "Details", new { id=item.<#= primaryKeys[0] #> })%> |
-                <%<#= nugget #> Html.ActionLink("Delete", "Delete", new { id=item.<#= primaryKeys[0] #> })%>
-            </td>
-<#
-	} else {
-#>
-            <td>
-                <%<#= nugget #> Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) %> |
-                <%<#= nugget #> Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ })%> |
-                <%<#= nugget #> Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })%>
-            </td>
-<#
-	}
-	
-	foreach(KeyValuePair<string, string> property in properties) {
-#>
-            <td>
-                <%<#= nugget #> <#= htmlEncodeBegin #><#= property.Value #><#= htmlEncodeEnd #> %>
-            </td>
-<#
-	}
-#>
-        </tr>
-    
-    <% } %>
-
-    </table>
-
 <#
 }
 #>
