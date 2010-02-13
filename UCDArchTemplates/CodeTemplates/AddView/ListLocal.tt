@@ -72,6 +72,27 @@ if(!String.IsNullOrEmpty(mvcViewDataTypeGenericString)) {
 	Dictionary<string, string> properties = new Dictionary<string, string>();
 	FilterProperties(mvcHost.ViewDataType, properties);
 #>
+
+<p>
+    <%<#= nugget #> Html.ActionLink("Create New", "Create") %>
+</p>
+
+<% Html.Telerik().Grid(Model) 
+            .Name("List")
+            .PrefixUrlParameters(false) //True if >0 sortable/pageable grids
+            .Columns(col => {
+            col.Add(x => {%>
+				<%<#= nugget #> Html.ActionLink("Edit", "Edit", new { id = x.Id }) %>           
+				<%});
+			<#	foreach(KeyValuePair<string, string> property in properties) { #>
+            col.Add(x => x.<#= property.Key #>);
+            <# } #>
+            })
+            //.Pageable()
+            //.Sortable()
+            .Render(); 
+        %>
+
     <table>
         <tr>
             <th></th>
@@ -122,10 +143,6 @@ if(!String.IsNullOrEmpty(mvcViewDataTypeGenericString)) {
     <% } %>
 
     </table>
-
-    <p>
-        <%<#= nugget #> Html.ActionLink("Create New", "Create") %>
-    </p>
 
 <#
 }

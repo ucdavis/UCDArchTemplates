@@ -2,23 +2,31 @@
 <%@ Import Namespace="Telerik.Web.Mvc.UI"%>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="TitleContent" runat="server">
-	Index3
+	Index
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
 
     <h2>Index</h2>
 
-    <% Html.Telerik().Grid(Model) 
-            .Name("CustomerList")
+
+<p>
+    <%= Html.ActionLink("Create New", "Create") %>
+</p>
+
+<% Html.Telerik().Grid(Model) 
+            .Name("List")
             .PrefixUrlParameters(false) //True if >0 sortable/pageable grids
-            .Columns(col =>
-                         {
-                             col.Add(x => x.CompanyName);
-                             col.Add(x => x.ContactName);
-                             col.Add(x => x.Country);
-                             col.Add(x => x.Fax);
-                         })
+            .Columns(col => {
+            col.Add(x => {%>
+				<%= Html.ActionLink("Edit", "Edit", new { id = x.Id }) %>           
+				<%});
+			            col.Add(x => x.CompanyName);
+                        col.Add(x => x.ContactName);
+                        col.Add(x => x.Country);
+                        col.Add(x => x.Fax);
+                        col.Add(x => x.Id);
+                        })
             //.Pageable()
             //.Sortable()
             .Render(); 
@@ -72,10 +80,6 @@
     <% } %>
 
     </table>
-
-    <p>
-        <%= Html.ActionLink("Create New", "Create") %>
-    </p>
 
 </asp:Content>
 
