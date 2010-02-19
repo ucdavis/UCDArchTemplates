@@ -40,35 +40,46 @@ if(mvcHost.AddActionMethods) {
 #>
         //
         // GET: <#= (!String.IsNullOrEmpty(mvcHost.AreaName)) ? ("/" + mvcHost.AreaName) : String.Empty #>/<#= mvcHost.ControllerRootName #>/Details/5
-
         public ActionResult Details(int id)
         {
-            return View();
+            var <#= lowerClassName #> = <#= repository #>.GetNullableByID(id);
+
+            if (<#= lowerClassName #> == null) return RedirectToAction("Index");
+
+            return View(<#= lowerClassName #>);
         }
 
         //
         // GET: <#= (!String.IsNullOrEmpty(mvcHost.AreaName)) ? ("/" + mvcHost.AreaName) : String.Empty #>/<#= mvcHost.ControllerRootName #>/Create
-
         public ActionResult Create()
         {
-            return View();
+            var <#= lowerClassName #> = new <#= className #>();
+
+            return View(<#= lowerClassName #>);
         } 
 
         //
         // POST: <#= (!String.IsNullOrEmpty(mvcHost.AreaName)) ? ("/" + mvcHost.AreaName) : String.Empty #>/<#= mvcHost.ControllerRootName #>/Create
-
         [HttpPost]
-        public ActionResult Create(FormCollection collection)
+        public ActionResult Create(<#= className #> <#= lowerClassName #>)
         {
-            try
+            var <#= lowerClassName #>ToCreate = new <#= className #>();
+
+            TransferValues(<#= lowerClassName #>, <#= lowerClassName #>ToCreate);
+
+            <#= lowerClassName #>ToCreate.TransferValidationMessagesTo(ModelState);
+
+            if (ModelState.IsValid)
             {
-                // TODO: Add insert logic here
+                <#= repository #>.EnsurePersistent(<#= lowerClassName #>ToCreate);
+
+                Message = "<#= className #> Created Successfully";
 
                 return RedirectToAction("Index");
             }
-            catch
+            else
             {
-                return View();
+                return View(<#= lowerClassName #>);
             }
         }
 
