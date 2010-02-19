@@ -86,21 +86,8 @@ if(!String.IsNullOrEmpty(mvcViewDataTypeGenericString)) {
 #>
     </fieldset>
     <p>
-<#
-	List<string> primaryKeys = GetEntityKeyProperties(mvcHost.ViewDataType);
-	if(primaryKeys.Count > 0) {
-#>
-
-        <%<#= nugget #> Html.ActionLink("Edit", "Edit", new { id=Model.<#= primaryKeys[0] #> }) %> |
+        <%<#= nugget #> Html.ActionLink("Edit", "Edit", new { id = Model.Id }) %> |
         <%<#= nugget #> Html.ActionLink("Back to List", "Index") %>
-<#
-	} else {
-#>
-        <%<#= nugget #> Html.ActionLink("Edit", "Edit", new { /* id=Model.PrimaryKey */ }) %> |
-        <%<#= nugget #> Html.ActionLink("Back to List", "Index") %>
-<#
-	}
-#>
     </p>
 
 <#
@@ -152,6 +139,8 @@ public void FilterProperties(Type type, Dictionary<string, string> properties) {
 			if(currentUnderlyingType != null) {
 				currentPropertyType = currentUnderlyingType;
 			}
+			
+			if (pi.Name == "Id") continue;
 			
 			if (IsBindableType(currentPropertyType) && pi.CanRead)
 			{				
