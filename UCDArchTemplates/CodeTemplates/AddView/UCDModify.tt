@@ -92,7 +92,7 @@ if(!String.IsNullOrEmpty(mvcViewDataTypeGenericString)) {
 	}
 #>
             <p>
-                <input type="submit" value="Create" />
+                <input type="submit" value="<#= mvcHost.ViewName #>" />
             </p>
         </fieldset>
 
