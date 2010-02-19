@@ -1,0 +1,7 @@
+﻿ListLocal: Modified
+CreateLocal: Original
+DeleteLocal: Original
+DetailsLocal: Original
+EditLocal: Original
+EmptyLocal: Original
+
