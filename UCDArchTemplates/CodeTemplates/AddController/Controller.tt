@@ -25,7 +25,6 @@ namespace <#= mvcHost.Namespace #>
         {
             <#= repository #> = <#= lowerClassName #>Repository;
         }
-
     
         //
         // GET: <#= (!String.IsNullOrEmpty(mvcHost.AreaName)) ? ("/" + mvcHost.AreaName) : String.Empty #>/<#= mvcHost.ControllerRootName #>/
