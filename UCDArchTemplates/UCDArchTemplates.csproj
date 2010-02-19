@@ -74,6 +74,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\CustomerController.cs" />
+    <Compile Include="Controllers\Default1Controller.cs" />
+    <Compile Include="Controllers\Default2Controller.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -109,7 +111,7 @@
     <Content Include="Views\Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="CodeTemplates\AddController\ControllerLocal.tt">
+    <None Include="CodeTemplates\AddController\Controller.tt">
     </None>
     <None Include="CodeTemplates\AddView\CreateLocal.tt">
     </None>

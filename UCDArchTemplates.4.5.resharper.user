@@ -17,19 +17,43 @@
       <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:Views/d:Home/f:Index.aspx" caret="604" fromTop="14" />
       <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:Controllers/f:CustomerController.cs" caret="293" fromTop="12" />
       <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:Views/d:Customer/f:Index.aspx" caret="0" fromTop="0" />
-      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:Models/f:Order.cs" caret="0" fromTop="0" />
       <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:CodeTemplates/d:AddView/f:EditLocal.tt" caret="2251" fromTop="14" />
+      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:CodeTemplates/d:AddController/f:Controller.tt" caret="327" fromTop="12" />
+      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:Controllers/f:Default1Controller.cs" caret="0" fromTop="0" />
+      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:Models/f:Order.cs" caret="151" fromTop="6" />
+      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:Controllers/f:Default2Controller.cs" caret="1443" fromTop="31" />
     </RecentFiles>
     <RecentEdits>
-      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:Models/f:Customer.cs" caret="435" fromTop="15" />
-      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:Models/f:Order.cs" caret="151" fromTop="6" />
-      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:Models/f:Order.cs" caret="824" fromTop="27" />
+      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:Models/f:Order.cs" caret="808" fromTop="27" />
       <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:Controllers/f:CustomerController.cs" caret="0" fromTop="0" />
       <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:Models/f:Customer.cs" caret="1817" fromTop="59" />
       <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:Models/f:Customer.cs" caret="2403" fromTop="73" />
       <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:Controllers/f:CustomerController.cs" caret="328" fromTop="13" />
       <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:Views/d:Home/f:Index.aspx" caret="573" fromTop="12" />
       <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:Views/d:Customer/f:Index.aspx" caret="1006" fromTop="27" />
+      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:CodeTemplates/d:AddController/f:Controller.tt" caret="326" fromTop="12" />
+      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:Controllers/f:Default1Controller.cs" caret="0" fromTop="0" />
+      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:Controllers/f:Default2Controller.cs" caret="0" fromTop="0" />
+      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:Controllers/f:Default2Controller.cs" caret="1950" fromTop="46" />
+      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:Controllers/f:Default2Controller.cs" caret="2095" fromTop="15" />
+      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:Controllers/f:Default2Controller.cs" caret="2486" fromTop="32" />
+      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:Controllers/f:Default2Controller.cs" caret="2627" fromTop="39" />
+      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:Controllers/f:Default2Controller.cs" caret="546" fromTop="11" />
+      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:Controllers/f:Default2Controller.cs" caret="470" fromTop="11" />
+      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:Controllers/f:Default2Controller.cs" caret="688" fromTop="20" />
+      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:Controllers/f:Default2Controller.cs" caret="1011" fromTop="33" />
+      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:Controllers/f:Default2Controller.cs" caret="1192" fromTop="42" />
+      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:Controllers/f:Default2Controller.cs" caret="1785" fromTop="41" />
+      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:Controllers/f:Default2Controller.cs" caret="1751" fromTop="38" />
+      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:Controllers/f:Default2Controller.cs" caret="230" fromTop="5" />
+      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:Models/f:Order.cs" caret="171" fromTop="6" />
+      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:Controllers/f:Default2Controller.cs" caret="2975" fromTop="88" />
+      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:Controllers/f:Default2Controller.cs" caret="2975" fromTop="83" />
+      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:Controllers/f:Default2Controller.cs" caret="1623" fromTop="13" />
+      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:Controllers/f:Default2Controller.cs" caret="2975" fromTop="71" />
+      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:Controllers/f:Default2Controller.cs" caret="1517" fromTop="35" />
+      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:Controllers/f:Default2Controller.cs" caret="1519" fromTop="35" />
+      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:Controllers/f:Default2Controller.cs" caret="1398" fromTop="30" />
     </RecentEdits>
   </RecentFiles>
   <UnitTestRunner>
@@ -43,12 +67,12 @@
       <Item value="prop" priority="0" />
       <Item value="public" priority="1" />
       <Item value="Required" priority="2" />
-      <Item value="int" priority="0" />
+      <Item value="int" priority="1" />
       <Item value="static" priority="0" />
-      <Item value="var" priority="2" />
+      <Item value="var" priority="5" />
       <Item value="IList" priority="0" />
       <Item value="Customer" priority="2" />
-      <Item value="new" priority="2" />
+      <Item value="new" priority="4" />
       <Item value="List" priority="0" />
       <Item value="for" priority="0" />
       <Item value="CompanyName" priority="0" />
@@ -59,16 +83,38 @@
       <Item value="Id" priority="0" />
       <Item value="customerList" priority="1" />
       <Item value="newCustomer" priority="0" />
-      <Item value="return" priority="0" />
+      <Item value="return" priority="2" />
       <Item value="customers" priority="0" />
       <Item value="Html" priority="3" />
       <Item value="Model" priority="1" />
-      <Item value="Web" priority="1" />
+      <Item value="Web" priority="5" />
       <Item value="Telerik" priority="0" />
       <Item value="Mvc" priority="0" />
-      <Item value="false" priority="0" />
+      <Item value="false" priority="1" />
       <Item value="col" priority="6" />
       <Item value="x" priority="5" />
+      <Item value="ctor" priority="0" />
+      <Item value="_orderRepository" priority="1" />
+      <Item value="orderList" priority="0" />
+      <Item value="id" priority="0" />
+      <Item value="if" priority="0" />
+      <Item value="order" priority="6" />
+      <Item value="null" priority="0" />
+      <Item value="RedirectToAction" priority="0" />
+      <Item value="private" priority="0" />
+      <Item value="RedirectResult" priority="0" />
+      <Item value="Message" priority="0" />
+      <Item value="Order" priority="2" />
+      <Item value="orderToCreate" priority="7" />
+      <Item value="ModelState" priority="2" />
+      <Item value="UCDArch" priority="3" />
+      <Item value="Validator" priority="1" />
+      <Item value="MvcValidationAdapter" priority="1" />
+      <Item value="using" priority="1" />
+      <Item value="Helpers" priority="2" />
+      <Item value="ValidationHelper" priority="1" />
+      <Item value="DomainObject" priority="0" />
+      <Item value="Content" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Int32">
       <Item value="ToString" priority="0" />
@@ -103,6 +149,19 @@
     <ItemStatistics item="Qualified:System.Collections.Generic.IEnumerable`1">
       <Item value="ToList" priority="0" />
       <Item value="Take" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:UCDArch.Core.PersistanceSupport.IRepository`1">
+      <Item value="GetAll" priority="0" />
+      <Item value="GetNullableByID" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@UCDArch.Web.Validator.MvcValidationAdapter">
+      <Item value="TransferValidationMessagesTo" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@UCDArch.Web.Helpers.ValidationHelper">
+      <Item value="TransferValidationMessagesTo" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:UCDArchTemplates.Models.Order">
+      <Item value="TransferValidationMessagesTo" priority="0" />
     </ItemStatistics>
   </CompletionStatisticsManager>
 </Configuration>

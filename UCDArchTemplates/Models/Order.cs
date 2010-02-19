@@ -4,7 +4,7 @@ using UCDArch.Core.DomainModel;
 
 namespace UCDArchTemplates.Models
 {
-    public class Order : DomainObjectWithTypedId<int>
+    public class Order : DomainObject
     {
         /// <summary>
         /// This is a placeholder constructor for NHibernate.
