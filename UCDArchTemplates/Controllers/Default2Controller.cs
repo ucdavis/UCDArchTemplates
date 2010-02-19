@@ -23,7 +23,7 @@ namespace UCDArchTemplates.Controllers
         // GET: /Default2/
         public ActionResult Index()
         {
-            var orderList = _orderRepository.GetAll();
+            var orderList = _orderRepository.Queryable;
 
             return View(orderList);
         }
@@ -43,9 +43,9 @@ namespace UCDArchTemplates.Controllers
         // GET: /Default2/Create
         public ActionResult Create()
         {
-            var order = new Order();
-
-            return View(order);
+            var viewModel = OrderViewModel.Create(Repository);
+            
+            return View(viewModel);
         } 
 
         //
@@ -69,7 +69,10 @@ namespace UCDArchTemplates.Controllers
             }
             else
             {
-                return View(order);
+                var viewModel = OrderViewModel.Create(Repository);
+                viewModel.Order = order;
+
+                return View(viewModel);
             }
         }
 
@@ -81,7 +84,10 @@ namespace UCDArchTemplates.Controllers
 
             if (order == null) return RedirectToAction("Index");
 
-            return View(order);
+            var viewModel = OrderViewModel.Create(Repository);
+            viewModel.Order = order;
+            
+            return View(viewModel);
         }
 
         //
@@ -107,7 +113,10 @@ namespace UCDArchTemplates.Controllers
             }
             else
             {
-                return View(order);
+                var viewModel = OrderViewModel.Create(Repository);
+                viewModel.Order = order;
+
+                return View(viewModel);
             }
         }
 
@@ -146,5 +155,17 @@ namespace UCDArchTemplates.Controllers
             throw new NotImplementedException();
         }
 
+    }
+
+    public class OrderViewModel
+    {
+        public Order Order { get; set; }
+
+        public static OrderViewModel Create(IRepository repository)
+        {
+            var viewModel = new OrderViewModel {Order = new Order()};
+
+            return viewModel;
+        }
     }
 }
