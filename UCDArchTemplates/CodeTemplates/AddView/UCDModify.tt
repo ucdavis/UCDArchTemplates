@@ -68,7 +68,10 @@ if(!String.IsNullOrEmpty(mvcViewDataTypeGenericString)) {
 	Dictionary<string, string> properties = new Dictionary<string, string>();
 	FilterProperties(mvcHost.ViewDataType, properties);
 #>
+	<%= Html.ClientSideValidation<Customer>() %>
+
     <% using (Html.BeginForm()) {%>
+        <%= Html.AntiForgeryToken() %>
         <%<#= nugget #> Html.ValidationSummary(true) %>
 
         <fieldset>
@@ -148,6 +151,8 @@ public void FilterProperties(Type type, Dictionary<string, string> properties) {
 			if(currentUnderlyingType != null) {
 				currentPropertyType = currentUnderlyingType;
 			}
+			
+			if (pi.Name == "Id") continue;
 			
 			if (IsBindableType(currentPropertyType) && pi.CanWrite)
 			{				

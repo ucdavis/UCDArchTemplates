@@ -75,6 +75,10 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Bin\UCDArch.Web.dll</HintPath>
     </Reference>
+    <Reference Include="xVal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f8fbed92c68c4006, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Bin\xVal.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\CustomerController.cs" />
@@ -120,13 +124,11 @@
   <ItemGroup>
     <None Include="CodeTemplates\AddController\Controller.tt">
     </None>
-    <None Include="CodeTemplates\AddView\UCDCreate.tt">
+    <None Include="CodeTemplates\AddView\UCDModify.tt">
     </None>
     <None Include="CodeTemplates\AddView\UCDDelete.tt">
     </None>
     <None Include="CodeTemplates\AddView\UCDDetails.tt">
-    </None>
-    <None Include="CodeTemplates\AddView\UCDEdit.tt">
     </None>
     <None Include="CodeTemplates\AddView\UCDEmpty.tt">
     </None>

@@ -173,7 +173,8 @@ namespace UCDArchTemplates.Controllers
  
 		public static CustomerViewModel Create(IRepository repository)
 		{
-			Check.Require(repository != null, "Repository must be supplied");
+            //Have to remove since we don't need it in this sample proj & no reason to fake
+			//Check.Require(repository != null, "Repository must be supplied");
 			
 			var viewModel = new CustomerViewModel {Customer = new Customer()};
  
