@@ -22,7 +22,7 @@ namespace UCDArchTemplates.Helpers
 
         public Customer GetNullableByID(int id)
         {
-            throw new NotImplementedException();
+            return Queryable.First();
         }
 
         public IList<Customer> GetAll()
