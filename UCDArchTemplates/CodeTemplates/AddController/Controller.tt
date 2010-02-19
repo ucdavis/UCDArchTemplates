@@ -160,4 +160,19 @@ if(mvcHost.AddActionMethods) {
 }
 #>
     }
+
+	/// <summary>
+    /// ViewModel for the <#= className #> class
+    /// </summary>
+    public class <#= className #>ViewModel
+	{
+		public <#= className #> <#= className #> { get; set; }
+ 
+		public static <#= className #>ViewModel Create(IRepository repository)
+		{
+			var viewModel = new <#= className #>ViewModel(<#= className #> = new <#= className #>());
+ 
+			return viewModel;
+		}
+	}
 }

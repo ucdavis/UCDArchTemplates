@@ -157,6 +157,9 @@ namespace UCDArchTemplates.Controllers
 
     }
 
+    /// <summary>
+    /// ViewModel for the Order class
+    /// </summary>
     public class OrderViewModel
     {
         public Order Order { get; set; }
