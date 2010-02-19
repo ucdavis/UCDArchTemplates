@@ -43,7 +43,7 @@ namespace UCDArchTemplates.Controllers
         // GET: /Default2/Create
         public ActionResult Create()
         {
-            var viewModel = OrderViewModel.Create(Repository);
+            var viewModel = OrderViewModelDefault.Create(Repository);
             
             return View(viewModel);
         } 
@@ -69,7 +69,7 @@ namespace UCDArchTemplates.Controllers
             }
             else
             {
-                var viewModel = OrderViewModel.Create(Repository);
+                var viewModel = OrderViewModelDefault.Create(Repository);
                 viewModel.Order = order;
 
                 return View(viewModel);
@@ -84,7 +84,7 @@ namespace UCDArchTemplates.Controllers
 
             if (order == null) return RedirectToAction("Index");
 
-            var viewModel = OrderViewModel.Create(Repository);
+            var viewModel = OrderViewModelDefault.Create(Repository);
             viewModel.Order = order;
             
             return View(viewModel);
@@ -113,7 +113,7 @@ namespace UCDArchTemplates.Controllers
             }
             else
             {
-                var viewModel = OrderViewModel.Create(Repository);
+                var viewModel = OrderViewModelDefault.Create(Repository);
                 viewModel.Order = order;
 
                 return View(viewModel);
@@ -160,13 +160,13 @@ namespace UCDArchTemplates.Controllers
     /// <summary>
     /// ViewModel for the Order class
     /// </summary>
-    public class OrderViewModel
+    public class OrderViewModelDefault
     {
         public Order Order { get; set; }
 
-        public static OrderViewModel Create(IRepository repository)
+        public static OrderViewModelDefault Create(IRepository repository)
         {
-            var viewModel = new OrderViewModel {Order = new Order()};
+            var viewModel = new OrderViewModelDefault {Order = new Order()};
 
             return viewModel;
         }

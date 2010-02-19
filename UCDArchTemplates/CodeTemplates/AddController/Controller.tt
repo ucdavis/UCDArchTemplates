@@ -53,9 +53,9 @@ if(mvcHost.AddActionMethods) {
         // GET: <#= (!String.IsNullOrEmpty(mvcHost.AreaName)) ? ("/" + mvcHost.AreaName) : String.Empty #>/<#= mvcHost.ControllerRootName #>/Create
         public ActionResult Create()
         {
-            var <#= lowerClassName #> = new <#= className #>();
-
-            return View(<#= lowerClassName #>);
+			var viewModel = <#= className #>ViewModel.Create(Repository);
+            
+            return View(viewModel);
         } 
 
         //
@@ -79,7 +79,10 @@ if(mvcHost.AddActionMethods) {
             }
             else
             {
-                return View(<#= lowerClassName #>);
+				var viewModel = <#= className #>ViewModel.Create(Repository);
+                viewModel.<#= className #> = <#= lowerClassName #>;
+
+                return View(viewModel);
             }
         }
 
@@ -91,7 +94,10 @@ if(mvcHost.AddActionMethods) {
 
             if (<#= lowerClassName #> == null) return RedirectToAction("Index");
 
-            return View(<#= lowerClassName #>);
+			var viewModel = <#= className #>ViewModel.Create(Repository);
+			viewModel.<#= className #> = <#= lowerClassName #>;
+
+			return View(viewModel);
         }
         
         //
@@ -117,7 +123,10 @@ if(mvcHost.AddActionMethods) {
             }
             else
             {
-                return View(<#= lowerClassName #>);
+				var viewModel = <#= className #>ViewModel.Create(Repository);
+                viewModel.<#= className #> = <#= lowerClassName #>;
+
+                return View(viewModel);
             }
         }
         
@@ -170,7 +179,7 @@ if(mvcHost.AddActionMethods) {
  
 		public static <#= className #>ViewModel Create(IRepository repository)
 		{
-			var viewModel = new <#= className #>ViewModel(<#= className #> = new <#= className #>());
+			var viewModel = new <#= className #>ViewModel {<#= className #> = new <#= className #>()};
  
 			return viewModel;
 		}
