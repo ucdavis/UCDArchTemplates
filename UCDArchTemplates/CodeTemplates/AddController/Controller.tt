@@ -84,8 +84,45 @@ if(mvcHost.AddActionMethods) {
         }
 
         //
-        // GET: <#= (!String.IsNullOrEmpty(mvcHost.AreaName)) ? ("/" + mvcHost.AreaName) : String.Empty #>/<#= mvcHost.ControllerRootName #>/Delete/5
- 
+        // GET: <#= (!String.IsNullOrEmpty(mvcHost.AreaName)) ? ("/" + mvcHost.AreaName) : String.Empty #>/<#= mvcHost.ControllerRootName #>/Edit/5
+        public ActionResult Edit(int id)
+        {
+            var <#= lowerClassName #> = <#= repository #>.GetNullableByID(id);
+
+            if (<#= lowerClassName #> == null) return RedirectToAction("Index");
+
+            return View(<#= lowerClassName #>);
+        }
+        
+        //
+        // POST: <#= (!String.IsNullOrEmpty(mvcHost.AreaName)) ? ("/" + mvcHost.AreaName) : String.Empty #>/<#= mvcHost.ControllerRootName #>/Edit/5
+        [HttpPost]
+        public ActionResult Edit(int id, <#= className #> <#= lowerClassName #>)
+        {
+            var <#= lowerClassName #>ToEdit = <#= repository #>.GetNullableByID(id);
+
+            if (<#= lowerClassName #>ToEdit == null) return RedirectToAction("Index");
+
+            TransferValues(<#= lowerClassName #>, <#= lowerClassName #>ToEdit);
+
+            <#= lowerClassName #>ToEdit.TransferValidationMessagesTo(ModelState);
+
+            if (ModelState.IsValid)
+            {
+                <#= repository #>.EnsurePersistent(<#= lowerClassName #>ToEdit);
+
+                Message = "<#= className #> Edited Successfully";
+
+                return RedirectToAction("Index");
+            }
+            else
+            {
+                return View(<#= lowerClassName #>);
+            }
+        }
+        
+        //
+        // GET: <#= (!String.IsNullOrEmpty(mvcHost.AreaName)) ? ("/" + mvcHost.AreaName) : String.Empty #>/<#= mvcHost.ControllerRootName #>/Delete/5 
         public ActionResult Delete(int id)
         {
             return View();
@@ -93,7 +130,6 @@ if(mvcHost.AddActionMethods) {
 
         //
         // POST: <#= (!String.IsNullOrEmpty(mvcHost.AreaName)) ? ("/" + mvcHost.AreaName) : String.Empty #>/<#= mvcHost.ControllerRootName #>/Delete/5
-
         [HttpPost]
         public ActionResult Delete(int id, FormCollection collection)
         {
@@ -109,31 +145,6 @@ if(mvcHost.AddActionMethods) {
             }
         }
 
-        //
-        // GET: <#= (!String.IsNullOrEmpty(mvcHost.AreaName)) ? ("/" + mvcHost.AreaName) : String.Empty #>/<#= mvcHost.ControllerRootName #>/Edit/5
- 
-        public ActionResult Edit(int id)
-        {
-            return View();
-        }
-
-        //
-        // POST: <#= (!String.IsNullOrEmpty(mvcHost.AreaName)) ? ("/" + mvcHost.AreaName) : String.Empty #>/<#= mvcHost.ControllerRootName #>/Edit/5
-
-        [HttpPost]
-        public ActionResult Edit(int id, FormCollection collection)
-        {
-            try
-            {
-                // TODO: Add update logic here
- 
-                return RedirectToAction("Index");
-            }
-            catch
-            {
-                return View();
-            }
-        }
 <#
 }
 #>
