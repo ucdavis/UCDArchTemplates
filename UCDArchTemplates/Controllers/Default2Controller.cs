@@ -114,24 +114,27 @@ namespace UCDArchTemplates.Controllers
         // GET: /Default2/Delete/5
         public ActionResult Delete(int id)
         {
-            return View();
+            var order = _orderRepository.GetNullableByID(id);
+
+            if (order == null) return RedirectToAction("Index");
+
+            return View(order);
         }
 
         //
         // POST: /Default2/Delete/5
         [HttpPost]
-        public ActionResult Delete(int id, FormCollection collection)
+        public ActionResult Delete(int id, Order order)
         {
-            try
-            {
-                // TODO: Add delete logic here
- 
-                return RedirectToAction("Index");
-            }
-            catch
-            {
-                return View();
-            }
+            var orderToDelete = _orderRepository.GetNullableByID(id);
+
+            if (orderToDelete == null) return RedirectToAction("Index");
+
+            _orderRepository.Remove(orderToDelete);
+
+            Message = "Order Removed Successfully";
+
+            return RedirectToAction("Index");
         }
 
         /// <summary>
