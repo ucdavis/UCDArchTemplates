@@ -127,6 +127,8 @@
   <ItemGroup>
     <None Include="CodeTemplates\AddController\Controller.tt">
     </None>
+    <None Include="CodeTemplates\AddView\UCDListExtended.tt">
+    </None>
     <None Include="CodeTemplates\AddView\UCDModify.tt">
     </None>
     <None Include="CodeTemplates\AddView\UCDDelete.tt">

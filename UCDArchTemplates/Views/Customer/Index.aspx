@@ -21,12 +21,18 @@
             col.Add(x => {%>
 				<%= Html.ActionLink("Edit", "Edit", new { id = x.Id }) %>           
 				<%});
+			col.Add(x => {%>
+				<%= Html.ActionLink("Details", "Details", new { id = x.Id }) %>           
+				<%});
 			            col.Add(x => x.CompanyName);
                         col.Add(x => x.ContactName);
                         col.Add(x => x.Country);
                         col.Add(x => x.Fax);
                         col.Add(x => x.Id);
-                        })
+                        col.Add(x => {%>
+				<%= Html.ActionLink("Delete", "Delete", new { id = x.Id }) %>           
+				<%});
+            })
             //.Pageable()
             //.Sortable()
             .Render(); 
