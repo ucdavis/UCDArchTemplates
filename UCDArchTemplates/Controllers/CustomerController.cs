@@ -159,7 +159,10 @@ namespace UCDArchTemplates.Controllers
         /// </summary>
         private static void TransferValues(Customer source, Customer destination)
         {
-            throw new NotImplementedException();
+            destination.CompanyName = source.CompanyName;
+            destination.ContactName = source.ContactName;
+            destination.Country = source.Country;
+            destination.Fax = source.Fax;
         }
 
     }
