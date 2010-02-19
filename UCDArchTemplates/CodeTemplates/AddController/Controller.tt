@@ -125,24 +125,27 @@ if(mvcHost.AddActionMethods) {
         // GET: <#= (!String.IsNullOrEmpty(mvcHost.AreaName)) ? ("/" + mvcHost.AreaName) : String.Empty #>/<#= mvcHost.ControllerRootName #>/Delete/5 
         public ActionResult Delete(int id)
         {
-            return View();
+			var <#= lowerClassName #> = <#= repository #>.GetNullableByID(id);
+
+            if (<#= lowerClassName #> == null) return RedirectToAction("Index");
+
+            return View(<#= lowerClassName #>);
         }
 
         //
         // POST: <#= (!String.IsNullOrEmpty(mvcHost.AreaName)) ? ("/" + mvcHost.AreaName) : String.Empty #>/<#= mvcHost.ControllerRootName #>/Delete/5
         [HttpPost]
-        public ActionResult Delete(int id, FormCollection collection)
+        public ActionResult Delete(int id, Order <#= lowerClassName #>)
         {
-            try
-            {
-                // TODO: Add delete logic here
- 
-                return RedirectToAction("Index");
-            }
-            catch
-            {
-                return View();
-            }
+			var <#= lowerClassName #>ToDelete = <#= repository #>.GetNullableByID(id);
+
+            if (<#= lowerClassName #>ToDelete == null) return RedirectToAction("Index");
+
+            <#= repository #>.Remove(<#= lowerClassName #>ToDelete);
+
+            Message = "<#= className #> Removed Successfully";
+
+            return RedirectToAction("Index");
         }
 
 <#
