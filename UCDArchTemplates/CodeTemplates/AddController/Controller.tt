@@ -30,7 +30,7 @@ namespace <#= mvcHost.Namespace #>
         // GET: <#= (!String.IsNullOrEmpty(mvcHost.AreaName)) ? ("/" + mvcHost.AreaName) : String.Empty #>/<#= mvcHost.ControllerRootName #>/
         public ActionResult Index()
         {
-            var <#= lowerClassName #>List = <#= repository #>.GetAll();
+            var <#= lowerClassName #>List = <#= repository #>.Queryable;
 
             return View(<#= lowerClassName #>List);
         }
