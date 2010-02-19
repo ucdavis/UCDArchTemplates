@@ -149,6 +149,8 @@ public void FilterProperties(Type type, Dictionary<string, string> properties) {
 				currentPropertyType = currentUnderlyingType;
 			}
 			
+			if (pi.Name == "Id") continue;
+			
 			if (IsBindableType(currentPropertyType) && pi.CanRead)
 			{				
 				if(currentPropertyType.Equals(typeof(double)) || currentPropertyType.Equals(typeof(decimal))) {
