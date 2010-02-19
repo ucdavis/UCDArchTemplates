@@ -147,6 +147,14 @@ if(mvcHost.AddActionMethods) {
 
             return RedirectToAction("Index");
         }
+        
+        /// <summary>
+        /// Transfer editable values from source to destination
+        /// </summary>
+        private static void TransferValues(<#= className #> source, <#= className #> destination)
+        {
+            throw new NotImplementedException();
+        }
 
 <#
 }
