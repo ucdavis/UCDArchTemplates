@@ -29,6 +29,7 @@
         </div>
 
         <div id="main">
+            <h3><span style="color:Green;"><%= Html.Encode(TempData["Message"]) %></span></h3>
             <asp:ContentPlaceHolder ID="MainContent" runat="server" />
 
             <div id="footer">

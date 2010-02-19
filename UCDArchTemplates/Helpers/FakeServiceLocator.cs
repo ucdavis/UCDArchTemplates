@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using Microsoft.Practices.ServiceLocation;
 using UCDArch.Core.PersistanceSupport;
+using UCDArch.Core.CommonValidator;
 
 namespace UCDArchTemplates.Helpers
 {
@@ -12,6 +13,11 @@ namespace UCDArchTemplates.Helpers
             if (serviceType == typeof(IDbContext))
             {
                 return new FakeDBContext();
+            }
+
+            if (serviceType == typeof(IValidator))
+            {
+                return new FakeValidator();
             }
 
             return null;

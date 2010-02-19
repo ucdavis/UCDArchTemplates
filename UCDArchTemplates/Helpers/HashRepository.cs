@@ -37,12 +37,12 @@ namespace UCDArchTemplates.Helpers
 
         public void EnsurePersistent(Customer entity)
         {
-            throw new NotImplementedException();
+            
         }
 
         public void EnsurePersistent(Customer entity, bool forceSave)
         {
-            throw new NotImplementedException();
+            
         }
 
         public void Remove(Customer entity)

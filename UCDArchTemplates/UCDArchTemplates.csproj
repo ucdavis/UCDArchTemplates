@@ -84,6 +84,7 @@
     <Compile Include="Controllers\CustomerController.cs" />
     <Compile Include="Helpers\FakeDBContext.cs" />
     <Compile Include="Helpers\FakeServiceLocator.cs" />
+    <Compile Include="Helpers\FakeValidator.cs" />
     <Compile Include="Helpers\HashRepository.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
