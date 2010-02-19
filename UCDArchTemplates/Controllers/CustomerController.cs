@@ -15,6 +15,11 @@ namespace UCDArchTemplates.Controllers
     {
 	    private readonly IRepository<Customer> _customerRepository;
 
+        public CustomerController()
+        {
+            _customerRepository = new CustomerHashRepository();
+        }
+
         public CustomerController(IRepository<Customer> customerRepository)
         {
             _customerRepository = customerRepository;
