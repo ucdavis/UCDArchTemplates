@@ -3,6 +3,7 @@
 MvcTextTemplateHost mvcHost = (MvcTextTemplateHost)(Host);
 string className = mvcHost.ControllerRootName;
 string lowerClassName = className.ToLower();
+string repository = "_" + lowerClassName + "Repository";
 #>
 using System;
 using System.Web.Mvc;
@@ -18,11 +19,11 @@ namespace <#= mvcHost.Namespace #>
     /// </summary>
     public class <#= mvcHost.ControllerName #> : SuperController
     {
-	    private readonly IRepository<<#= className #>> _<#= lowerClassName #>Repository;
+	    private readonly IRepository<<#= className #>> <#= repository #>;
 
         public <#= mvcHost.ControllerName #>(IRepository<<#= className #>> <#= lowerClassName #>Repository)
         {
-            _<#= lowerClassName #>Repository = <#= lowerClassName #>Repository;
+            <#= repository #> = <#= lowerClassName #>Repository;
         }
 
     
@@ -30,7 +31,9 @@ namespace <#= mvcHost.Namespace #>
         // GET: <#= (!String.IsNullOrEmpty(mvcHost.AreaName)) ? ("/" + mvcHost.AreaName) : String.Empty #>/<#= mvcHost.ControllerRootName #>/
         public ActionResult Index()
         {
-            return View();
+            var <#= lowerClassName #>List = <#= repository #>.GetAll();
+
+            return View(<#= lowerClassName #>List);
         }
 
 <#
