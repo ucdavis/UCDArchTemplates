@@ -87,6 +87,7 @@ if(!String.IsNullOrEmpty(mvcViewDataTypeGenericString)) {
 #>
     </fieldset>
     <% using (Html.BeginForm()) { %>
+		<%= Html.AntiForgeryToken() %>
         <p>
 		    <input type="submit" value="Delete" /> |
 		    <%<#= nugget #> Html.ActionLink("Back to List", "Index") %>
@@ -142,6 +143,8 @@ public void FilterProperties(Type type, Dictionary<string, string> properties) {
 			if(currentUnderlyingType != null) {
 				currentPropertyType = currentUnderlyingType;
 			}
+			
+			if (pi.Name == "Id") continue;
 			
 			if (IsBindableType(currentPropertyType) && pi.CanRead)
 			{				

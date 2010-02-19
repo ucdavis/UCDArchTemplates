@@ -85,7 +85,7 @@
     <Compile Include="Helpers\FakeDBContext.cs" />
     <Compile Include="Helpers\FakeServiceLocator.cs" />
     <Compile Include="Helpers\FakeValidator.cs" />
-    <Compile Include="Helpers\HashRepository.cs" />
+    <Compile Include="Helpers\CustomerHashRepository.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -98,7 +98,9 @@
     <Content Include="CodeTemplates\TemplateStatus.txt" />
     <Content Include="Global.asax" />
     <Content Include="Views\Customer\Create.aspx" />
+    <Content Include="Views\Customer\Delete.aspx" />
     <Content Include="Views\Customer\Details.aspx" />
+    <Content Include="Views\Customer\Edit.aspx" />
     <Content Include="Views\Customer\Index.aspx" />
     <Content Include="Web.config" />
     <Content Include="Content\Site.css" />

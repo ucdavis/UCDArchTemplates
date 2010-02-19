@@ -47,7 +47,7 @@ namespace UCDArchTemplates.Helpers
 
         public void Remove(Customer entity)
         {
-            throw new NotImplementedException();
+            
         }
 
         public IQueryable<Customer> Queryable
