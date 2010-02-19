@@ -9,7 +9,6 @@ using System;
 using System.Web.Mvc;
 using UCDArch.Core.PersistanceSupport;
 using UCDArch.Web.Controller;
-using UCDArchTemplates.Models;
 using UCDArch.Web.Helpers;
 using UCDArch.Core.Utils;
 

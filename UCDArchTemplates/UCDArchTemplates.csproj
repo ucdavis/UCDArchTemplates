@@ -74,10 +74,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\CustomerController.cs" />
-    <Compile Include="Controllers\Default2Controller.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\OrderController.cs" />
-    <Compile Include="Controllers\SampleOrderController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -114,17 +111,17 @@
   <ItemGroup>
     <None Include="CodeTemplates\AddController\Controller.tt">
     </None>
-    <None Include="CodeTemplates\AddView\CreateLocal.tt">
+    <None Include="CodeTemplates\AddView\UCDCreate.tt">
     </None>
-    <None Include="CodeTemplates\AddView\DeleteLocal.tt">
+    <None Include="CodeTemplates\AddView\UCDDelete.tt">
     </None>
-    <None Include="CodeTemplates\AddView\DetailsLocal.tt">
+    <None Include="CodeTemplates\AddView\UCDDetails.tt">
     </None>
-    <None Include="CodeTemplates\AddView\EditLocal.tt">
+    <None Include="CodeTemplates\AddView\UCDEdit.tt">
     </None>
-    <None Include="CodeTemplates\AddView\EmptyLocal.tt">
+    <None Include="CodeTemplates\AddView\UCDEmpty.tt">
     </None>
-    <None Include="CodeTemplates\AddView\ListLocal.tt">
+    <None Include="CodeTemplates\AddView\UCDList.tt">
     </None>
   </ItemGroup>
   <ItemGroup>
