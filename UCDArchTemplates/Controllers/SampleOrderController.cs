@@ -4,6 +4,7 @@ using UCDArch.Core.PersistanceSupport;
 using UCDArch.Web.Controller;
 using UCDArchTemplates.Models;
 using UCDArch.Web.Helpers;
+using UCDArch.Core.Utils;
 
 namespace UCDArchTemplates.Controllers
 {
@@ -169,6 +170,8 @@ namespace UCDArchTemplates.Controllers
  
 		public static SampleOrderViewModel Create(IRepository repository)
 		{
+		    Check.Require(repository != null, "Repository must be supplied");
+
 			var viewModel = new SampleOrderViewModel {Order = new Order()};
  
 			return viewModel;
