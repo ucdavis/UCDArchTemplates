@@ -61,7 +61,7 @@ if(mvcHost.AddActionMethods) {
 
         //
         // POST: <#= (!String.IsNullOrEmpty(mvcHost.AreaName)) ? ("/" + mvcHost.AreaName) : String.Empty #>/<#= mvcHost.ControllerRootName #>/Create
-        [HttpPost]
+        [AcceptVerbs(HttpVerbs.Post)]
         public ActionResult Create(<#= className #> <#= lowerClassName #>)
         {
             var <#= lowerClassName #>ToCreate = new <#= className #>();
@@ -103,7 +103,7 @@ if(mvcHost.AddActionMethods) {
         
         //
         // POST: <#= (!String.IsNullOrEmpty(mvcHost.AreaName)) ? ("/" + mvcHost.AreaName) : String.Empty #>/<#= mvcHost.ControllerRootName #>/Edit/5
-        [HttpPost]
+        [AcceptVerbs(HttpVerbs.Post)]
         public ActionResult Edit(int id, <#= className #> <#= lowerClassName #>)
         {
             var <#= lowerClassName #>ToEdit = <#= repository #>.GetNullableByID(id);
@@ -144,7 +144,7 @@ if(mvcHost.AddActionMethods) {
 
         //
         // POST: <#= (!String.IsNullOrEmpty(mvcHost.AreaName)) ? ("/" + mvcHost.AreaName) : String.Empty #>/<#= mvcHost.ControllerRootName #>/Delete/5
-        [HttpPost]
+        [AcceptVerbs(HttpVerbs.Post)]
         public ActionResult Delete(int id, Order <#= lowerClassName #>)
         {
 			var <#= lowerClassName #>ToDelete = <#= repository #>.GetNullableByID(id);

@@ -54,7 +54,7 @@ namespace UCDArchTemplates.Controllers
 
         //
         // POST: /Order/Create
-        [HttpPost]
+        [AcceptVerbs(HttpVerbs.Post)]
         public ActionResult Create(Order order)
         {
             var orderToCreate = new Order();
@@ -96,7 +96,7 @@ namespace UCDArchTemplates.Controllers
         
         //
         // POST: /Order/Edit/5
-        [HttpPost]
+        [AcceptVerbs(HttpVerbs.Post)]
         public ActionResult Edit(int id, Order order)
         {
             var orderToEdit = _orderRepository.GetNullableByID(id);
@@ -137,7 +137,7 @@ namespace UCDArchTemplates.Controllers
 
         //
         // POST: /Order/Delete/5
-        [HttpPost]
+        [AcceptVerbs(HttpVerbs.Post)]
         public ActionResult Delete(int id, Order order)
         {
 			var orderToDelete = _orderRepository.GetNullableByID(id);
