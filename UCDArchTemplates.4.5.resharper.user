@@ -12,16 +12,13 @@
   <RecentFiles>
     <RecentFiles>
       <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:Views/d:Shared/f:Site.Master" caret="1195" fromTop="39" />
-      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:CodeTemplates/d:AddView/f:Create.tt" caret="4" fromTop="0" />
-      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:CodeTemplates/d:AddController/f:Controller.tt" caret="331" fromTop="12" />
-      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:Models/f:Order.cs" caret="824" fromTop="27" />
       <File id="1775053E-D290-4591-8399-EDB363B754C6/f:Class1.cs" caret="158" fromTop="8" />
       <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:Models/f:Customer.cs" caret="872" fromTop="34" />
       <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:Views/d:Home/f:Index.aspx" caret="604" fromTop="14" />
-      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:CodeTemplates/d:AddView/f:Delete.tt" caret="917" fromTop="21" />
-      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:CodeTemplates/d:AddView/f:List.tt" caret="0" fromTop="0" />
       <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:Controllers/f:CustomerController.cs" caret="293" fromTop="12" />
-      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:Views/d:Customer/f:Index.aspx" caret="865" fromTop="24" />
+      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:Views/d:Customer/f:Index.aspx" caret="0" fromTop="0" />
+      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:Models/f:Order.cs" caret="0" fromTop="0" />
+      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:CodeTemplates/d:AddView/f:EditLocal.tt" caret="2251" fromTop="14" />
     </RecentFiles>
     <RecentEdits>
       <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:Models/f:Customer.cs" caret="435" fromTop="15" />
@@ -32,13 +29,6 @@
       <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:Models/f:Customer.cs" caret="2403" fromTop="73" />
       <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:Controllers/f:CustomerController.cs" caret="328" fromTop="13" />
       <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:Views/d:Home/f:Index.aspx" caret="573" fromTop="12" />
-      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:CodeTemplates/d:AddView/f:List.tt" caret="2938" fromTop="25" />
-      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:CodeTemplates/d:AddView/f:List.tt" caret="4455" fromTop="39" />
-      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:CodeTemplates/d:AddView/f:List.tt" caret="2597" fromTop="19" />
-      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:CodeTemplates/d:AddView/f:List.tt" caret="3133" fromTop="35" />
-      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:CodeTemplates/d:AddView/f:List.tt" caret="2962" fromTop="31" />
-      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:CodeTemplates/d:AddView/f:List.tt" caret="4648" fromTop="52" />
-      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:CodeTemplates/d:AddView/f:List.tt" caret="3220" fromTop="1" />
       <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:Views/d:Customer/f:Index.aspx" caret="1006" fromTop="27" />
     </RecentEdits>
   </RecentFiles>

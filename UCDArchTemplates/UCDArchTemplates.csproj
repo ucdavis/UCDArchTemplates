@@ -83,6 +83,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="CodeTemplates\TemplateStatus.txt" />
     <Content Include="Global.asax" />
     <Content Include="Views\Customer\Index.aspx" />
     <Content Include="Web.config" />
