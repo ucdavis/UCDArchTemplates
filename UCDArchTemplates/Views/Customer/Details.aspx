@@ -23,12 +23,9 @@
         <div class="display-label">Fax</div>
         <div class="display-field"><%= Html.Encode(Model.Fax) %></div>
         
-        <div class="display-label">Id</div>
-        <div class="display-field"><%= Html.Encode(Model.Id) %></div>
-        
     </fieldset>
     <p>
-        <%= Html.ActionLink("Edit", "Edit", new { /* id=Model.PrimaryKey */ }) %> |
+        <%= Html.ActionLink("Edit", "Edit", new { id = Model.Id }) %> |
         <%= Html.ActionLink("Back to List", "Index") %>
     </p>
 
