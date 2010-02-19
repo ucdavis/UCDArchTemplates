@@ -1,9 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 using System.Web.Routing;
+using Microsoft.Practices.ServiceLocation;
+using UCDArchTemplates.Helpers;
 
 namespace UCDArchTemplates
 {
@@ -29,6 +27,8 @@ namespace UCDArchTemplates
             AreaRegistration.RegisterAllAreas();
 
             RegisterRoutes(RouteTable.Routes);
+
+            ServiceLocator.SetLocatorProvider(() => new FakeServiceLocator());
         }
     }
 }

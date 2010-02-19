@@ -4,7 +4,7 @@ using System.Linq;
 using UCDArch.Core.PersistanceSupport;
 using UCDArchTemplates.Models;
 
-namespace UCDArchTemplates.Controllers
+namespace UCDArchTemplates.Helpers
 {
     public class CustomerHashRepository : IRepository<Customer>
     {

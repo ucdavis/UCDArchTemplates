@@ -4,6 +4,7 @@ using UCDArch.Core.PersistanceSupport;
 using UCDArch.Web.Controller;
 using UCDArch.Web.Helpers;
 using UCDArch.Core.Utils;
+using UCDArchTemplates.Helpers;
 using UCDArchTemplates.Models;
 
 namespace UCDArchTemplates.Controllers
