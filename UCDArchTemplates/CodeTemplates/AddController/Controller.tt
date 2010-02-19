@@ -1,20 +1,33 @@
 <#@ template language="C#" HostSpecific="True" #>
 <#
 MvcTextTemplateHost mvcHost = (MvcTextTemplateHost)(Host);
+string className = mvcHost.ControllerRootName;
+string lowerClassName = className.ToLower();
 #>
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.Mvc;
+using UCDArch.Core.PersistanceSupport;
+using UCDArch.Web.Controller;
+using UCDArchTemplates.Models;
+using UCDArch.Web.Helpers;
 
 namespace <#= mvcHost.Namespace #>
 {
+    /// <summary>
+    /// Controller for the <#= className #> class
+    /// </summary>
     public class <#= mvcHost.ControllerName #> : SuperController
     {
+	    private readonly IRepository<<#= className #>> _<#= lowerClassName #>Repository;
+
+        public <#= mvcHost.ControllerName #>(IRepository<<#= className #>> <#= lowerClassName #>Repository)
+        {
+            _<#= lowerClassName #>Repository = <#= lowerClassName #>Repository;
+        }
+
+    
         //
         // GET: <#= (!String.IsNullOrEmpty(mvcHost.AreaName)) ? ("/" + mvcHost.AreaName) : String.Empty #>/<#= mvcHost.ControllerRootName #>/
-
         public ActionResult Index()
         {
             return View();

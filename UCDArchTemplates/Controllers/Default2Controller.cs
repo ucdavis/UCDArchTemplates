@@ -1,14 +1,15 @@
 ﻿using System;
 using System.Web.Mvc;
-using UCDArch.Core.DomainModel;
 using UCDArch.Core.PersistanceSupport;
 using UCDArch.Web.Controller;
-using UCDArch.Web.Validator;
 using UCDArchTemplates.Models;
 using UCDArch.Web.Helpers;
 
 namespace UCDArchTemplates.Controllers
 {
+    /// <summary>
+    /// Controller for the Order class
+    /// </summary>
     public class Default2Controller : SuperController
     {
         private readonly IRepository<Order> _orderRepository;
