@@ -82,6 +82,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\CustomerController.cs" />
+    <Compile Include="Helpers\CustomGridBuilder.cs" />
     <Compile Include="Helpers\FakeDBContext.cs" />
     <Compile Include="Helpers\FakeServiceLocator.cs" />
     <Compile Include="Helpers\FakeValidator.cs" />
@@ -90,6 +91,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Helpers\HtmlHelperExtensions.cs" />
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\Order.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -77,7 +77,7 @@ if(!String.IsNullOrEmpty(mvcViewDataTypeGenericString)) {
     <%<#= nugget #> Html.ActionLink("Create New", "Create") %>
 </p>
 
-<% Html.Telerik().Grid(Model) 
+<% Html.Grid(Model) 
             .Name("List")
             .PrefixUrlParameters(false) //True if >0 sortable/pageable grids
             .Columns(col => {

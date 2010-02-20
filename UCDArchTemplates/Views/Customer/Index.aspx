@@ -1,4 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage<IEnumerable<UCDArchTemplates.Models.Customer>>" %>
+<%@ Import Namespace="UCDArchTemplates.Helpers"%>
 <%@ Import Namespace="Telerik.Web.Mvc.UI"%>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="TitleContent" runat="server">
@@ -14,7 +15,7 @@
     <%= Html.ActionLink("Create New", "Create") %>
 </p>
 
-<% Html.Telerik().Grid(Model) 
+<% Html.Grid(Model) 
             .Name("List")
             .PrefixUrlParameters(false) //True if >0 sortable/pageable grids
             .Columns(col => {
