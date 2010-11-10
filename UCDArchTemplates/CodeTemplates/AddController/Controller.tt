@@ -144,7 +144,7 @@ if(mvcHost.AddActionMethods) {
         //
         // POST: <#= (!String.IsNullOrEmpty(mvcHost.AreaName)) ? ("/" + mvcHost.AreaName) : String.Empty #>/<#= mvcHost.ControllerRootName #>/Delete/5
         [AcceptVerbs(HttpVerbs.Post)]
-        public ActionResult Delete(int id, Order <#= lowerClassName #>)
+        public ActionResult Delete(int id, <#= className #> <#= lowerClassName #>)
         {
 			var <#= lowerClassName #>ToDelete = <#= repository #>.GetNullableByID(id);
 
