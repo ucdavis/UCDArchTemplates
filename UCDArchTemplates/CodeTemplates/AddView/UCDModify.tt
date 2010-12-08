@@ -68,7 +68,7 @@ if(!String.IsNullOrEmpty(mvcViewDataTypeGenericString)) {
 	Dictionary<string, string> properties = new Dictionary<string, string>();
 	FilterProperties(mvcHost.ViewDataType, properties);
 #>
-	<%= Html.ClientSideValidation<Customer>() %>
+	<%= Html.ClientSideValidation<#= mvcViewDataTypeGenericString #>() %>
 
     <% using (Html.BeginForm()) {%>
         <%= Html.AntiForgeryToken() %>

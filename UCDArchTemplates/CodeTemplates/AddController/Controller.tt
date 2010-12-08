@@ -17,7 +17,7 @@ namespace <#= mvcHost.Namespace #>
     /// <summary>
     /// Controller for the <#= className #> class
     /// </summary>
-    public class <#= mvcHost.ControllerName #> : SuperController
+    public class <#= mvcHost.ControllerName #> : ApplicationController
     {
 	    private readonly IRepository<<#= className #>> <#= repository #>;
 
@@ -42,7 +42,7 @@ if(mvcHost.AddActionMethods) {
         // GET: <#= (!String.IsNullOrEmpty(mvcHost.AreaName)) ? ("/" + mvcHost.AreaName) : String.Empty #>/<#= mvcHost.ControllerRootName #>/Details/5
         public ActionResult Details(int id)
         {
-            var <#= lowerClassName #> = <#= repository #>.GetNullableByID(id);
+            var <#= lowerClassName #> = <#= repository #>.GetNullableById(id);
 
             if (<#= lowerClassName #> == null) return RedirectToAction("Index");
 
@@ -90,7 +90,7 @@ if(mvcHost.AddActionMethods) {
         // GET: <#= (!String.IsNullOrEmpty(mvcHost.AreaName)) ? ("/" + mvcHost.AreaName) : String.Empty #>/<#= mvcHost.ControllerRootName #>/Edit/5
         public ActionResult Edit(int id)
         {
-            var <#= lowerClassName #> = <#= repository #>.GetNullableByID(id);
+            var <#= lowerClassName #> = <#= repository #>.GetNullableById(id);
 
             if (<#= lowerClassName #> == null) return RedirectToAction("Index");
 
@@ -105,7 +105,7 @@ if(mvcHost.AddActionMethods) {
         [AcceptVerbs(HttpVerbs.Post)]
         public ActionResult Edit(int id, <#= className #> <#= lowerClassName #>)
         {
-            var <#= lowerClassName #>ToEdit = <#= repository #>.GetNullableByID(id);
+            var <#= lowerClassName #>ToEdit = <#= repository #>.GetNullableById(id);
 
             if (<#= lowerClassName #>ToEdit == null) return RedirectToAction("Index");
 
@@ -134,7 +134,7 @@ if(mvcHost.AddActionMethods) {
         // GET: <#= (!String.IsNullOrEmpty(mvcHost.AreaName)) ? ("/" + mvcHost.AreaName) : String.Empty #>/<#= mvcHost.ControllerRootName #>/Delete/5 
         public ActionResult Delete(int id)
         {
-			var <#= lowerClassName #> = <#= repository #>.GetNullableByID(id);
+			var <#= lowerClassName #> = <#= repository #>.GetNullableById(id);
 
             if (<#= lowerClassName #> == null) return RedirectToAction("Index");
 
@@ -146,7 +146,7 @@ if(mvcHost.AddActionMethods) {
         [AcceptVerbs(HttpVerbs.Post)]
         public ActionResult Delete(int id, <#= className #> <#= lowerClassName #>)
         {
-			var <#= lowerClassName #>ToDelete = <#= repository #>.GetNullableByID(id);
+			var <#= lowerClassName #>ToDelete = <#= repository #>.GetNullableById(id);
 
             if (<#= lowerClassName #>ToDelete == null) return RedirectToAction("Index");
 
