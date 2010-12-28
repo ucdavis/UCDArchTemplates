@@ -1,4 +1,4 @@
-<#@ template language="C#" HostSpecific="True" #>
+﻿<#@ template language="C#" HostSpecific="True" #>
 <#
 MvcTextTemplateHost mvcHost = (MvcTextTemplateHost)(Host);
 string className = mvcHost.ControllerRootName;
@@ -6,6 +6,7 @@ string lowerClassName = className.ToLower();
 string repository = "_" + lowerClassName + "Repository";
 #>
 using System;
+using System.Linq;
 using System.Web.Mvc;
 using UCDArch.Core.PersistanceSupport;
 using UCDArch.Web.Controller;
