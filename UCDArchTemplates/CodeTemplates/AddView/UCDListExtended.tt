@@ -81,16 +81,16 @@ if(!String.IsNullOrEmpty(mvcViewDataTypeGenericString)) {
             .Name("List")
             .PrefixUrlParameters(false) //True if >0 sortable/pageable grids
             .Columns(col => {
-            col.Add(x => {%>
+            col.Template(x => {%>
 				<%<#= nugget #> Html.ActionLink("Edit", "Edit", new { id = x.Id }) %>           
 				<%});
-			col.Add(x => {%>
+			col.Template(x => {%>
 				<%<#= nugget #> Html.ActionLink("Details", "Details", new { id = x.Id }) %>           
 				<%});
 			<#	foreach(KeyValuePair<string, string> property in properties) { #>
-            col.Add(x => x.<#= property.Key #>);
+            col.Bound(x => x.<#= property.Key #>);
             <# } #>
-            col.Add(x => {%>
+            col.Template(x => {%>
 				<%<#= nugget #> Html.ActionLink("Delete", "Delete", new { id = x.Id }) %>           
 				<%});
             })
