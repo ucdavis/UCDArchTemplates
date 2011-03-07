@@ -9,8 +9,6 @@ using System;
 using System.Linq;
 using System.Web.Mvc;
 using UCDArch.Core.PersistanceSupport;
-using UCDArch.Web.Controller;
-using UCDArch.Web.Helpers;
 using UCDArch.Core.Utils;
 
 namespace <#= mvcHost.Namespace #>
@@ -33,7 +31,7 @@ namespace <#= mvcHost.Namespace #>
         {
             var <#= lowerClassName #>List = <#= repository #>.Queryable;
 
-            return View(<#= lowerClassName #>List);
+            return View(<#= lowerClassName #>List.ToList());
         }
 
 <#
@@ -61,14 +59,12 @@ if(mvcHost.AddActionMethods) {
 
         //
         // POST: <#= (!String.IsNullOrEmpty(mvcHost.AreaName)) ? ("/" + mvcHost.AreaName) : String.Empty #>/<#= mvcHost.ControllerRootName #>/Create
-        [AcceptVerbs(HttpVerbs.Post)]
+        [HttpPost]
         public ActionResult Create(<#= className #> <#= lowerClassName #>)
         {
             var <#= lowerClassName #>ToCreate = new <#= className #>();
 
             TransferValues(<#= lowerClassName #>, <#= lowerClassName #>ToCreate);
-
-            <#= lowerClassName #>ToCreate.TransferValidationMessagesTo(ModelState);
 
             if (ModelState.IsValid)
             {
@@ -103,7 +99,7 @@ if(mvcHost.AddActionMethods) {
         
         //
         // POST: <#= (!String.IsNullOrEmpty(mvcHost.AreaName)) ? ("/" + mvcHost.AreaName) : String.Empty #>/<#= mvcHost.ControllerRootName #>/Edit/5
-        [AcceptVerbs(HttpVerbs.Post)]
+        [HttpPost]
         public ActionResult Edit(int id, <#= className #> <#= lowerClassName #>)
         {
             var <#= lowerClassName #>ToEdit = <#= repository #>.GetNullableById(id);
@@ -111,8 +107,6 @@ if(mvcHost.AddActionMethods) {
             if (<#= lowerClassName #>ToEdit == null) return RedirectToAction("Index");
 
             TransferValues(<#= lowerClassName #>, <#= lowerClassName #>ToEdit);
-
-            <#= lowerClassName #>ToEdit.TransferValidationMessagesTo(ModelState);
 
             if (ModelState.IsValid)
             {
@@ -144,7 +138,7 @@ if(mvcHost.AddActionMethods) {
 
         //
         // POST: <#= (!String.IsNullOrEmpty(mvcHost.AreaName)) ? ("/" + mvcHost.AreaName) : String.Empty #>/<#= mvcHost.ControllerRootName #>/Delete/5
-        [AcceptVerbs(HttpVerbs.Post)]
+        [HttpPost]
         public ActionResult Delete(int id, <#= className #> <#= lowerClassName #>)
         {
 			var <#= lowerClassName #>ToDelete = <#= repository #>.GetNullableById(id);
@@ -163,6 +157,8 @@ if(mvcHost.AddActionMethods) {
         /// </summary>
         private static void TransferValues(<#= className #> source, <#= className #> destination)
         {
+			//Recommendation: Use AutoMapper
+			//Mapper.Map(source, destination)
             throw new NotImplementedException();
         }
 

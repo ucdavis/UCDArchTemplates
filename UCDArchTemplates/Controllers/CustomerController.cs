@@ -1,16 +1,17 @@
-﻿using System.Web.Mvc;
+﻿using System;
+using System.Linq;
+using System.Web.Mvc;
 using UCDArch.Core.PersistanceSupport;
-using UCDArch.Web.Controller;
-using UCDArch.Web.Helpers;
-using UCDArchTemplates.Helpers;
+using UCDArch.Core.Utils;
 using UCDArchTemplates.Models;
+using UCDArchTemplates.Helpers;
 
 namespace UCDArchTemplates.Controllers
 {
     /// <summary>
     /// Controller for the Customer class
     /// </summary>
-    public class CustomerController : SuperController
+    public class CustomerController : ApplicationController
     {
 	    private readonly IRepository<Customer> _customerRepository;
 
@@ -30,7 +31,7 @@ namespace UCDArchTemplates.Controllers
         {
             var customerList = _customerRepository.Queryable;
 
-            return View(customerList);
+            return View(customerList.ToList());
         }
 
         //
@@ -55,14 +56,12 @@ namespace UCDArchTemplates.Controllers
 
         //
         // POST: /Customer/Create
-        [AcceptVerbs(HttpVerbs.Post)]
+        [HttpPost]
         public ActionResult Create(Customer customer)
         {
             var customerToCreate = new Customer();
 
             TransferValues(customer, customerToCreate);
-
-            customerToCreate.TransferValidationMessagesTo(ModelState);
 
             if (ModelState.IsValid)
             {
@@ -97,7 +96,7 @@ namespace UCDArchTemplates.Controllers
         
         //
         // POST: /Customer/Edit/5
-        [AcceptVerbs(HttpVerbs.Post)]
+        [HttpPost]
         public ActionResult Edit(int id, Customer customer)
         {
             var customerToEdit = _customerRepository.GetNullableById(id);
@@ -105,8 +104,6 @@ namespace UCDArchTemplates.Controllers
             if (customerToEdit == null) return RedirectToAction("Index");
 
             TransferValues(customer, customerToEdit);
-
-            customerToEdit.TransferValidationMessagesTo(ModelState);
 
             if (ModelState.IsValid)
             {
@@ -138,8 +135,8 @@ namespace UCDArchTemplates.Controllers
 
         //
         // POST: /Customer/Delete/5
-        [AcceptVerbs(HttpVerbs.Post)]
-        public ActionResult Delete(int id, Order customer)
+        [HttpPost]
+        public ActionResult Delete(int id, Customer customer)
         {
 			var customerToDelete = _customerRepository.GetNullableById(id);
 
@@ -161,6 +158,10 @@ namespace UCDArchTemplates.Controllers
             destination.ContactName = source.ContactName;
             destination.Country = source.Country;
             destination.Fax = source.Fax;
+
+			//Recommendation: Use AutoMapper
+			//Mapper.Map(source, destination)
+            //throw new NotImplementedException();
         }
 
     }
@@ -175,7 +176,7 @@ namespace UCDArchTemplates.Controllers
 		public static CustomerViewModel Create(IRepository repository)
 		{
             //Have to remove since we don't need it in this sample proj & no reason to fake
-			//Check.Require(repository != null, "Repository must be supplied");
+            //Check.Require(repository != null, "Repository must be supplied");
 			
 			var viewModel = new CustomerViewModel {Customer = new Customer()};
  

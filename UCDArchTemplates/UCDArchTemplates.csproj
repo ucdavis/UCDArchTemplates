@@ -80,6 +80,7 @@
     <Reference Include="System.Web.Helpers" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\ApplicationController.cs" />
     <Compile Include="Controllers\CustomerController.cs" />
     <Compile Include="Helpers\CustomGridBuilder.cs" />
     <Compile Include="Helpers\FakeDBContext.cs" />
