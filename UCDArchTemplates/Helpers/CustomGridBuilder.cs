@@ -1,5 +1,6 @@
 using System.Web;
 using Telerik.Web.Mvc.UI;
+using Telerik.Web.Mvc.UI.Fluent;
 using UCDArch.Core.PersistanceSupport;
 
 namespace UCDArchTemplates.Helpers

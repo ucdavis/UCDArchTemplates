@@ -1,9 +1,7 @@
-﻿using System;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 using UCDArch.Core.PersistanceSupport;
 using UCDArch.Web.Controller;
 using UCDArch.Web.Helpers;
-using UCDArch.Core.Utils;
 using UCDArchTemplates.Helpers;
 using UCDArchTemplates.Models;
 
@@ -39,7 +37,7 @@ namespace UCDArchTemplates.Controllers
         // GET: /Customer/Details/5
         public ActionResult Details(int id)
         {
-            var customer = _customerRepository.GetNullableByID(id);
+            var customer = _customerRepository.GetNullableById(id);
 
             if (customer == null) return RedirectToAction("Index");
 
@@ -87,7 +85,7 @@ namespace UCDArchTemplates.Controllers
         // GET: /Customer/Edit/5
         public ActionResult Edit(int id)
         {
-            var customer = _customerRepository.GetNullableByID(id);
+            var customer = _customerRepository.GetNullableById(id);
 
             if (customer == null) return RedirectToAction("Index");
 
@@ -102,7 +100,7 @@ namespace UCDArchTemplates.Controllers
         [AcceptVerbs(HttpVerbs.Post)]
         public ActionResult Edit(int id, Customer customer)
         {
-            var customerToEdit = _customerRepository.GetNullableByID(id);
+            var customerToEdit = _customerRepository.GetNullableById(id);
 
             if (customerToEdit == null) return RedirectToAction("Index");
 
@@ -131,7 +129,7 @@ namespace UCDArchTemplates.Controllers
         // GET: /Customer/Delete/5 
         public ActionResult Delete(int id)
         {
-			var customer = _customerRepository.GetNullableByID(id);
+			var customer = _customerRepository.GetNullableById(id);
 
             if (customer == null) return RedirectToAction("Index");
 
@@ -143,7 +141,7 @@ namespace UCDArchTemplates.Controllers
         [AcceptVerbs(HttpVerbs.Post)]
         public ActionResult Delete(int id, Order customer)
         {
-			var customerToDelete = _customerRepository.GetNullableByID(id);
+			var customerToDelete = _customerRepository.GetNullableById(id);
 
             if (customerToDelete == null) return RedirectToAction("Index");
 

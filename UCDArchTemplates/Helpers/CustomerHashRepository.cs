@@ -15,12 +15,12 @@ namespace UCDArchTemplates.Helpers
             _customers = Customer.GetAll();
         }
 
-        public Customer GetByID(int id)
+        public Customer GetById(int id)
         {
             throw new NotImplementedException();
         }
 
-        public Customer GetNullableByID(int id)
+        public Customer GetNullableById(int id)
         {
             return Queryable.First();
         }
@@ -45,9 +45,19 @@ namespace UCDArchTemplates.Helpers
             
         }
 
+        public void EnsurePersistent(Customer entity, bool forceSave, bool flushChanges)
+        {
+
+        }
+
         public void Remove(Customer entity)
         {
             
+        }
+
+        public void Remove(Customer entity, bool flushChanges)
+        {
+
         }
 
         public IQueryable<Customer> Queryable
