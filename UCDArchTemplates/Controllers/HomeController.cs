@@ -18,6 +18,13 @@ namespace UCDArchTemplates.Controllers
 
         public ActionResult About()
         {
+            var type = typeof (CustomerViewModel);
+
+            var vm = type.Name.Substring(0, "ViewModel".Length - 1);
+            
+            var c = type.GetProperty("Customer");
+
+
             return View();
         }
     }

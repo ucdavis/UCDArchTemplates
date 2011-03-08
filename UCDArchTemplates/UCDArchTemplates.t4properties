@@ -31,5 +31,10 @@
       <PropertyName>Host</PropertyName>
       <Value>VisualStudio</Value>
     </TransformationPropertyValue>
+    <TransformationPropertyValue>
+      <FileName>CodeTemplates\AddView\AspxCSharp\CreateViewModel.tt</FileName>
+      <PropertyName>Host</PropertyName>
+      <Value>VisualStudio</Value>
+    </TransformationPropertyValue>
   </Values>
 </TransformationPropertyValues>
