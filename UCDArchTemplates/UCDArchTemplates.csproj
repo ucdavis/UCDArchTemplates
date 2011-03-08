@@ -97,7 +97,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="CodeTemplates\TemplateStatus.txt" />
     <Content Include="Global.asax" />
     <Content Include="Views\Customer\Create.aspx" />
     <Content Include="Views\Customer\Delete.aspx" />
@@ -153,33 +152,26 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="CodeTemplates\AddController\Controller.tt" />
-    <Compile Include="CodeTemplates\AddView\AspxCSharp\CreateViewModel.tt" />
-    <Compile Include="CodeTemplates\AddView\AspxCSharp\EditViewModel.tt" />
+    <None Include="CodeTemplates\AddView\AspxCSharp\CreateViewModel.tt" />
+    <None Include="CodeTemplates\AddView\AspxCSharp\EditViewModel.tt" />
+    <None Include="CodeTemplates\AddView\AspxCSharp\ListTelerik.tt" />
     <None Include="CodeTemplates\AddView\AspxCSharp\Create.tt" />
-    <Compile Include="CodeTemplates\AddView\AspxCSharp\Delete.tt" />
+    <None Include="CodeTemplates\AddView\AspxCSharp\Delete.tt" />
     <None Include="CodeTemplates\AddView\AspxCSharp\Details.tt" />
     <None Include="CodeTemplates\AddView\AspxCSharp\Edit.tt" />
     <None Include="CodeTemplates\AddView\AspxCSharp\Empty.tt" />
     <None Include="CodeTemplates\AddView\AspxCSharp\List.tt" />
-    <Compile Include="CodeTemplates\AddView\CSHTML\CreateViewModel.tt" />
-    <Compile Include="CodeTemplates\AddView\CSHTML\EditViewModel.tt" />
+    <None Include="CodeTemplates\AddView\CSHTML\CreateViewModel.tt" />
+    <None Include="CodeTemplates\AddView\CSHTML\EditViewModel.tt" />
+    <None Include="CodeTemplates\AddView\CSHTML\ListTelerik.tt" />
     <None Include="CodeTemplates\AddView\CSHTML\Create.tt" />
     <None Include="CodeTemplates\AddView\CSHTML\Delete.tt" />
     <None Include="CodeTemplates\AddView\CSHTML\Details.tt" />
     <None Include="CodeTemplates\AddView\CSHTML\Edit.tt" />
     <None Include="CodeTemplates\AddView\CSHTML\Empty.tt" />
     <None Include="CodeTemplates\AddView\CSHTML\List.tt" />
-    <None Include="CodeTemplates\AddView\UCDListExtended.tt">
-    </None>
-    <None Include="CodeTemplates\AddView\UCDModify.tt">
-    </None>
-    <None Include="CodeTemplates\AddView\UCDDelete.tt" />
-    <None Include="CodeTemplates\AddView\UCDDetails.tt">
-    </None>
-    <None Include="CodeTemplates\AddView\UCDEmpty.tt">
-    </None>
-    <None Include="CodeTemplates\AddView\UCDList.tt">
-    </None>
+    <Content Include="Views\Customer\ViewPage1.cshtml" />
+    <Content Include="Views\Customer\ViewPage2.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{B4F97281-0DBD-4835-9ED8-7DFB966E87FF}" />

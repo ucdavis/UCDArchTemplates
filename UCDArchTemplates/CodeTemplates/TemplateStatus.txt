@@ -1,9 +1,0 @@
-﻿UCDList: Modified
-UCDCreate: Deleted
-UCDDelete: Deleted
-UCDModify: Created
-UCDDetails: Modified
-UCDEdit: Modified
-UCDEmpty: Original
-
-Controller: Modified
