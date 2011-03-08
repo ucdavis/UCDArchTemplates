@@ -76,7 +76,7 @@ if (mvcHost.ReferenceScriptLibraries) {
 	@Html.AntiForgeryToken()
     @Html.ValidationSummary(true)
     <fieldset>
-        <legend><#= mvcHost.ViewDataType.Name #></legend>
+        <legend><#= GetUnderlyingModelName(mvcHost.ViewDataType) #></legend>
 
 <#
 foreach (ModelProperty property in GetModelProperties(mvcHost.ViewDataType)) {
@@ -142,14 +142,19 @@ static Type[] bindableNonPrimitiveTypes = new[] {
     typeof(TimeSpan),
 };
 
+string GetUnderlyingModelName(Type type)
+{
+	if (type.Name.EndsWith("ViewModel") == false) { throw new ArgumentException("This template should be called with a viewmodel class"); }
+	return type.Name.Substring(0, "ViewModel".Length - 1);
+}
+
 // Call this to get the list of properties in the model. Change this to modify or add your
 // own default formatting for display values.
 List<ModelProperty> GetModelProperties(Type type) {
-    if (type.Name.EndsWith("ViewModel") == false) { throw new ArgumentException("This template should be called with a viewmodel class"); }
-	var viewTypeName = type.Name.Substring(0, "ViewModel".Length - 1);
+	var viewTypeName = GetUnderlyingModelName(type);
     var viewType = type.GetProperty(viewTypeName).PropertyType;                                                                                                                                                                                                                                                                                                                                                                                           
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
-    List<ModelProperty> results = GetEligibleProperties(viewType);
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+	List<ModelProperty> results = GetEligibleProperties(viewType);
     
     foreach (ModelProperty prop in results) {
         if (prop.UnderlyingType == typeof(double) || prop.UnderlyingType == typeof(decimal)) {
@@ -158,8 +163,8 @@ List<ModelProperty> GetModelProperties(Type type) {
         else if (prop.UnderlyingType == typeof(DateTime)) {
             prop.ValueExpression = "String.Format(\"{0:g}\", " + prop.ValueExpression + ")";
         }
-        
-	    prop.Path = string.Format("{0}.{1}", viewTypeName, prop.Name);                                                                                                                                                                                                                                                                                                              
+                                                                                                                                                                                                                                                                                                                                                                                                      
+        prop.Path = string.Format("{0}.{1}", viewTypeName, prop.Name);
     }
 
     return results;

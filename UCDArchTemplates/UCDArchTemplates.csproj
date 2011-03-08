@@ -180,7 +180,6 @@
     </None>
     <None Include="CodeTemplates\AddView\UCDList.tt">
     </None>
-    <Content Include="Views\Customer\ViewPage1.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{B4F97281-0DBD-4835-9ED8-7DFB966E87FF}" />
