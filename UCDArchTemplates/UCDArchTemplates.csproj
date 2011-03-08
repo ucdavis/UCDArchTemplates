@@ -99,12 +99,15 @@
   <ItemGroup>
     <Content Include="CodeTemplates\TemplateStatus.txt" />
     <Content Include="Global.asax" />
-    <Content Include="Views\Customer\Create.aspx" />
+    <Content Include="Views\Customer\Create2.aspx" />
     <Content Include="Views\Customer\Delete.aspx" />
     <Content Include="Views\Customer\Details.aspx" />
     <Content Include="Views\Customer\Edit.aspx" />
     <Content Include="Views\Customer\Index.aspx" />
-    <Content Include="Web.config" />
+    <Content Include="Views\Customer\Create.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\jquery-1.4.1.js" />
     <Content Include="Scripts\jquery-1.4.1.min.js" />
@@ -152,12 +155,23 @@
   <ItemGroup>
     <None Include="CodeTemplates\AddController\Controller.tt">
     </None>
+    <Compile Include="CodeTemplates\AddView\AspxCSharp\Create.tt" />
+    <Compile Include="CodeTemplates\AddView\AspxCSharp\Delete.tt" />
+    <None Include="CodeTemplates\AddView\AspxCSharp\Details.tt" />
+    <Compile Include="CodeTemplates\AddView\AspxCSharp\Edit.tt" />
+    <None Include="CodeTemplates\AddView\AspxCSharp\Empty.tt" />
+    <None Include="CodeTemplates\AddView\AspxCSharp\List.tt" />
+    <Compile Include="CodeTemplates\AddView\CSHTML\Create.tt" />
+    <Compile Include="CodeTemplates\AddView\CSHTML\Delete.tt" />
+    <None Include="CodeTemplates\AddView\CSHTML\Details.tt" />
+    <Compile Include="CodeTemplates\AddView\CSHTML\Edit.tt" />
+    <None Include="CodeTemplates\AddView\CSHTML\Empty.tt" />
+    <None Include="CodeTemplates\AddView\CSHTML\List.tt" />
     <None Include="CodeTemplates\AddView\UCDListExtended.tt">
     </None>
     <None Include="CodeTemplates\AddView\UCDModify.tt">
     </None>
-    <None Include="CodeTemplates\AddView\UCDDelete.tt">
-    </None>
+    <None Include="CodeTemplates\AddView\UCDDelete.tt" />
     <None Include="CodeTemplates\AddView\UCDDetails.tt">
     </None>
     <None Include="CodeTemplates\AddView\UCDEmpty.tt">
