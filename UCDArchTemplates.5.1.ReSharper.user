@@ -8,15 +8,54 @@
   </SettingsComponent>
   <RecentFiles>
     <RecentFiles>
-      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:Controllers/f:HomeController.cs" caret="327" fromTop="12" />
-      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:CodeTemplates/d:AddView/f:UCDDetails.tt" caret="4882" fromTop="30" />
-      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:CodeTemplates/d:AddView/f:UCDDelete.tt" caret="859" fromTop="17" />
-      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:CodeTemplates/d:AddController/f:Controller.tt" caret="49" fromTop="0" />
-      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:Controllers/f:CustomerController.cs" caret="229" fromTop="8" />
+      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/f:Web.config" caret="547" fromTop="12" />
+      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:Views/d:Customer/f:Edit.aspx" caret="515" fromTop="14" />
+      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:CodeTemplates/d:AddView/d:CSHTML/f:Create.tt" caret="1785" fromTop="34" />
+      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:CodeTemplates/d:AddView/d:CSHTML/f:Delete.tt" caret="1766" fromTop="33" />
+      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:CodeTemplates/d:AddView/d:CSHTML/f:Edit.tt" caret="1785" fromTop="34" />
+      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:Models/f:Customer.cs" caret="402" fromTop="16" />
+      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:Controllers/f:CustomerController.cs" caret="4952" fromTop="27" />
+      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:CodeTemplates/d:AddController/f:Controller.tt" caret="6110" fromTop="39" />
+      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:Views/d:Customer/f:Create.aspx" caret="8" fromTop="0" />
+      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:CodeTemplates/d:AddView/d:AspxCSharp/f:Delete.tt" caret="745" fromTop="16" />
+      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:CodeTemplates/d:AddView/d:AspxCSharp/f:Create.tt" caret="2526" fromTop="0" />
+      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:CodeTemplates/d:AddView/d:AspxCSharp/f:Edit.tt" caret="2526" fromTop="0" />
+      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:CodeTemplates/d:AddView/d:AspxCSharp/f:CreateViewModel.tt" caret="8079" fromTop="32" />
+      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:CodeTemplates/d:AddView/d:AspxCSharp/f:EditViewModel.tt" caret="2636" fromTop="18" />
+      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:CodeTemplates/d:AddView/d:CSHTML/f:EditViewModel.tt" caret="1925" fromTop="18" />
+      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:CodeTemplates/d:AddView/d:CSHTML/f:CreateViewModel.tt" caret="1925" fromTop="25" />
+      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:CodeTemplates/d:AddView/d:AspxCSharp/f:List.tt" caret="2172" fromTop="27" />
+      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:CodeTemplates/d:AddView/d:CSHTML/f:List.tt" caret="1819" fromTop="0" />
+      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:CodeTemplates/d:AddView/d:CSHTML/f:ListTelerik.tt" caret="1517" fromTop="25" />
+      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:CodeTemplates/d:AddView/d:AspxCSharp/f:ListTelerik.tt" caret="2233" fromTop="28" />
+      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:Views/d:Customer/f:Index.aspx" caret="0" fromTop="0" />
+      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:Controllers/f:HomeController.cs" caret="12" fromTop="0" />
     </RecentFiles>
     <RecentEdits>
-      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:CodeTemplates/d:AddController/f:Controller.tt" caret="5670" fromTop="27" />
-      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:CodeTemplates/d:AddController/f:Controller.tt" caret="49" fromTop="0" />
+      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:CodeTemplates/d:AddView/d:CSHTML/f:CreateViewModel.tt" caret="3000" fromTop="5" />
+      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:CodeTemplates/d:AddView/d:CSHTML/f:CreateViewModel.tt" caret="6111" fromTop="34" />
+      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:CodeTemplates/d:AddView/d:CSHTML/f:CreateViewModel.tt" caret="2378" fromTop="11" />
+      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:CodeTemplates/d:AddView/d:CSHTML/f:EditViewModel.tt" caret="3085" fromTop="10" />
+      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:CodeTemplates/d:AddView/d:CSHTML/f:EditViewModel.tt" caret="7193" fromTop="35" />
+      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:CodeTemplates/d:AddView/d:CSHTML/f:EditViewModel.tt" caret="6192" fromTop="35" />
+      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:CodeTemplates/d:AddView/d:CSHTML/f:EditViewModel.tt" caret="2119" fromTop="6" />
+      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:CodeTemplates/d:AddView/d:CSHTML/f:EditViewModel.tt" caret="2465" fromTop="16" />
+      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:CodeTemplates/d:AddView/d:AspxCSharp/f:CreateViewModel.tt" caret="5902" fromTop="25" />
+      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:CodeTemplates/d:AddView/d:AspxCSharp/f:CreateViewModel.tt" caret="2679" fromTop="16" />
+      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:CodeTemplates/d:AddView/d:AspxCSharp/f:CreateViewModel.tt" caret="5657" fromTop="19" />
+      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:CodeTemplates/d:AddView/d:AspxCSharp/f:EditViewModel.tt" caret="7831" fromTop="36" />
+      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:CodeTemplates/d:AddView/d:AspxCSharp/f:EditViewModel.tt" caret="2679" fromTop="18" />
+      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:CodeTemplates/d:AddView/d:CSHTML/f:CreateViewModel.tt" caret="6111" fromTop="35" />
+      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:CodeTemplates/d:AddView/d:CSHTML/f:EditViewModel.tt" caret="6192" fromTop="33" />
+      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:CodeTemplates/d:AddView/d:CSHTML/f:EditViewModel.tt" caret="1925" fromTop="18" />
+      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:CodeTemplates/d:AddView/d:CSHTML/f:CreateViewModel.tt" caret="1925" fromTop="25" />
+      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:CodeTemplates/d:AddView/d:AspxCSharp/f:ListTelerik.tt" caret="2719" fromTop="2" />
+      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:CodeTemplates/d:AddView/d:AspxCSharp/f:ListTelerik.tt" caret="2584" fromTop="23" />
+      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:CodeTemplates/d:AddView/d:CSHTML/f:ListTelerik.tt" caret="1870" fromTop="13" />
+      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:CodeTemplates/d:AddView/d:CSHTML/f:ListTelerik.tt" caret="1517" fromTop="25" />
+      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:CodeTemplates/d:AddView/d:AspxCSharp/f:ListTelerik.tt" caret="2233" fromTop="28" />
+      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:Views/d:Customer/f:Index.aspx" caret="539" fromTop="17" />
+      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:Controllers/f:HomeController.cs" caret="442" fromTop="6" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>
@@ -30,4 +69,36 @@
     </NUnitInstallDir>
     <UseAddins>Never</UseAddins>
   </UnitTestRunnerNUnit>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Qualified:@UCDArch.Data.NHibernate.NHibernateSessionManager">
+      <Item value="Instance" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:UCDArch.Data.NHibernate.NHibernateSessionManager">
+      <Item value="GetSession`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:NHibernate.ISession">
+      <Item value="BeginTransaction`0" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Default">
+      <Item value="ts" priority="1" />
+      <Item value="var" priority="1" />
+      <Item value="typeof" priority="0" />
+      <Item value="CustomerViewModel`0" priority="0" />
+      <Item value="type" priority="1" />
+      <Item value="string" priority="0" />
+      <Item value="c" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:NHibernate.ITransaction">
+      <Item value="Commit`0" priority="0" />
+      <Item value="Rollback`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Type">
+      <Item value="GetProperty`0" priority="0" />
+      <Item value="Name" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.String">
+      <Item value="Substring`0" priority="0" />
+      <Item value="Length" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
 </Configuration>

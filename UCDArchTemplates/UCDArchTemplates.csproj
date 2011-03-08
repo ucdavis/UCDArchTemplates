@@ -154,7 +154,7 @@
     <None Include="CodeTemplates\AddController\Controller.tt" />
     <None Include="CodeTemplates\AddView\AspxCSharp\CreateViewModel.tt" />
     <None Include="CodeTemplates\AddView\AspxCSharp\EditViewModel.tt" />
-    <None Include="CodeTemplates\AddView\AspxCSharp\ListTelerik.tt" />
+    <Compile Include="CodeTemplates\AddView\AspxCSharp\ListTelerik.tt" />
     <None Include="CodeTemplates\AddView\AspxCSharp\Create.tt" />
     <None Include="CodeTemplates\AddView\AspxCSharp\Delete.tt" />
     <None Include="CodeTemplates\AddView\AspxCSharp\Details.tt" />
@@ -163,15 +163,13 @@
     <None Include="CodeTemplates\AddView\AspxCSharp\List.tt" />
     <None Include="CodeTemplates\AddView\CSHTML\CreateViewModel.tt" />
     <None Include="CodeTemplates\AddView\CSHTML\EditViewModel.tt" />
-    <None Include="CodeTemplates\AddView\CSHTML\ListTelerik.tt" />
+    <Compile Include="CodeTemplates\AddView\CSHTML\ListTelerik.tt" />
     <None Include="CodeTemplates\AddView\CSHTML\Create.tt" />
     <None Include="CodeTemplates\AddView\CSHTML\Delete.tt" />
     <None Include="CodeTemplates\AddView\CSHTML\Details.tt" />
     <None Include="CodeTemplates\AddView\CSHTML\Edit.tt" />
     <None Include="CodeTemplates\AddView\CSHTML\Empty.tt" />
     <None Include="CodeTemplates\AddView\CSHTML\List.tt" />
-    <Content Include="Views\Customer\ViewPage1.cshtml" />
-    <Content Include="Views\Customer\ViewPage2.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{B4F97281-0DBD-4835-9ED8-7DFB966E87FF}" />
