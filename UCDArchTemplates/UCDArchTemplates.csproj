@@ -103,7 +103,6 @@
     <Content Include="Views\Customer\Details.aspx" />
     <Content Include="Views\Customer\Edit.aspx" />
     <Content Include="Views\Customer\Index.aspx" />
-    <Content Include="Views\Customer\ViewPage1.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -171,7 +170,6 @@
     <None Include="CodeTemplates\AddView\CSHTML\Edit.tt" />
     <None Include="CodeTemplates\AddView\CSHTML\Empty.tt" />
     <None Include="CodeTemplates\AddView\CSHTML\List.tt" />
-    <Content Include="Views\Customer\ViewPage1.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{B4F97281-0DBD-4835-9ED8-7DFB966E87FF}" />
