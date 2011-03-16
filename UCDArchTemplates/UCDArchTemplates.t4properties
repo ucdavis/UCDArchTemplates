@@ -7,11 +7,6 @@
       <Value>VisualStudio</Value>
     </TransformationPropertyValue>
     <TransformationPropertyValue>
-      <FileName>CodeTemplates\AddView\CSHTML\Create.tt</FileName>
-      <PropertyName>Host</PropertyName>
-      <Value>VisualStudio</Value>
-    </TransformationPropertyValue>
-    <TransformationPropertyValue>
       <FileName>CodeTemplates\AddView\AspxCSharp\Delete.tt</FileName>
       <PropertyName>Host</PropertyName>
       <Value>VisualStudio</Value>
@@ -68,6 +63,11 @@
     </TransformationPropertyValue>
     <TransformationPropertyValue>
       <FileName>CodeTemplates\AddView\CSHTML\List.tt</FileName>
+      <PropertyName>Host</PropertyName>
+      <Value>VisualStudio</Value>
+    </TransformationPropertyValue>
+    <TransformationPropertyValue>
+      <FileName>CodeTemplates\AddView\CSHTML\Create.tt</FileName>
       <PropertyName>Host</PropertyName>
       <Value>VisualStudio</Value>
     </TransformationPropertyValue>

@@ -10,15 +10,12 @@
     <RecentFiles>
       <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/f:Web.config" caret="547" fromTop="12" />
       <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:Views/d:Customer/f:Edit.aspx" caret="515" fromTop="14" />
-      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:CodeTemplates/d:AddView/d:CSHTML/f:Create.tt" caret="1785" fromTop="34" />
       <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:CodeTemplates/d:AddView/d:CSHTML/f:Delete.tt" caret="1766" fromTop="33" />
       <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:CodeTemplates/d:AddView/d:CSHTML/f:Edit.tt" caret="1785" fromTop="34" />
       <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:Models/f:Customer.cs" caret="402" fromTop="16" />
       <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:Controllers/f:CustomerController.cs" caret="4952" fromTop="27" />
-      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:CodeTemplates/d:AddController/f:Controller.tt" caret="6110" fromTop="39" />
       <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:Views/d:Customer/f:Create.aspx" caret="8" fromTop="0" />
       <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:CodeTemplates/d:AddView/d:AspxCSharp/f:Delete.tt" caret="745" fromTop="16" />
-      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:CodeTemplates/d:AddView/d:AspxCSharp/f:Create.tt" caret="2526" fromTop="0" />
       <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:CodeTemplates/d:AddView/d:AspxCSharp/f:Edit.tt" caret="2526" fromTop="0" />
       <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:CodeTemplates/d:AddView/d:AspxCSharp/f:CreateViewModel.tt" caret="8079" fromTop="32" />
       <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:CodeTemplates/d:AddView/d:AspxCSharp/f:EditViewModel.tt" caret="2636" fromTop="18" />
@@ -30,28 +27,11 @@
       <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:Controllers/f:HomeController.cs" caret="12" fromTop="0" />
       <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:CodeTemplates/d:AddView/d:CSHTML/f:List.tt" caret="2533" fromTop="23" />
       <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:CodeTemplates/d:AddView/d:AspxCSharp/f:List.tt" caret="3264" fromTop="21" />
+      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:CodeTemplates/d:AddController/f:Controller.tt" caret="0" fromTop="0" />
+      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:CodeTemplates/d:AddView/d:AspxCSharp/f:Create.tt" caret="1281" fromTop="13" />
+      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:CodeTemplates/d:AddView/d:CSHTML/f:Create.tt" caret="1950" fromTop="14" />
     </RecentFiles>
     <RecentEdits>
-      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:CodeTemplates/d:AddView/d:AspxCSharp/f:ListTelerik.tt" caret="2584" fromTop="23" />
-      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:CodeTemplates/d:AddView/d:CSHTML/f:ListTelerik.tt" caret="1870" fromTop="13" />
-      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:CodeTemplates/d:AddView/d:CSHTML/f:ListTelerik.tt" caret="1517" fromTop="25" />
-      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:CodeTemplates/d:AddView/d:AspxCSharp/f:ListTelerik.tt" caret="2233" fromTop="28" />
-      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:Views/d:Customer/f:Index.aspx" caret="539" fromTop="17" />
-      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:Controllers/f:HomeController.cs" caret="442" fromTop="6" />
-      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:CodeTemplates/d:AddView/d:AspxCSharp/f:List.tt" caret="7520" fromTop="24" />
-      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:CodeTemplates/d:AddView/d:AspxCSharp/f:List.tt" caret="7520" fromTop="37" />
-      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:CodeTemplates/d:AddView/d:CSHTML/f:List.tt" caret="6371" fromTop="5" />
-      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:CodeTemplates/d:AddView/d:CSHTML/f:List.tt" caret="6371" fromTop="22" />
-      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:CodeTemplates/d:AddView/d:CSHTML/f:List.tt" caret="6371" fromTop="27" />
-      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:CodeTemplates/d:AddView/d:CSHTML/f:List.tt" caret="6371" fromTop="0" />
-      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:CodeTemplates/d:AddView/d:AspxCSharp/f:List.tt" caret="7520" fromTop="10" />
-      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:CodeTemplates/d:AddView/d:AspxCSharp/f:List.tt" caret="2121" fromTop="11" />
-      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:CodeTemplates/d:AddView/d:AspxCSharp/f:List.tt" caret="2336" fromTop="19" />
-      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:CodeTemplates/d:AddView/d:AspxCSharp/f:List.tt" caret="2360" fromTop="24" />
-      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:CodeTemplates/d:AddView/d:AspxCSharp/f:List.tt" caret="2427" fromTop="28" />
-      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:CodeTemplates/d:AddView/d:AspxCSharp/f:List.tt" caret="2773" fromTop="37" />
-      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:CodeTemplates/d:AddView/d:AspxCSharp/f:List.tt" caret="3058" fromTop="29" />
-      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:CodeTemplates/d:AddView/d:AspxCSharp/f:List.tt" caret="3244" fromTop="38" />
       <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:CodeTemplates/d:AddView/d:AspxCSharp/f:List.tt" caret="3268" fromTop="22" />
       <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:CodeTemplates/d:AddView/d:CSHTML/f:List.tt" caret="0" fromTop="0" />
       <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:CodeTemplates/d:AddView/d:CSHTML/f:List.tt" caret="1424" fromTop="23" />
@@ -62,6 +42,23 @@
       <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:CodeTemplates/d:AddView/d:CSHTML/f:List.tt" caret="2322" fromTop="40" />
       <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:CodeTemplates/d:AddView/d:CSHTML/f:List.tt" caret="2502" fromTop="18" />
       <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:CodeTemplates/d:AddView/d:CSHTML/f:List.tt" caret="2533" fromTop="23" />
+      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:CodeTemplates/d:AddView/d:CSHTML/f:Create.tt" caret="7562" fromTop="11" />
+      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:CodeTemplates/d:AddView/d:CSHTML/f:Create.tt" caret="7562" fromTop="25" />
+      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:CodeTemplates/d:AddView/d:CSHTML/f:Create.tt" caret="7562" fromTop="18" />
+      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:CodeTemplates/d:AddView/d:CSHTML/f:Create.tt" caret="7562" fromTop="17" />
+      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:CodeTemplates/d:AddView/d:CSHTML/f:Create.tt" caret="7562" fromTop="19" />
+      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:CodeTemplates/d:AddView/d:CSHTML/f:Create.tt" caret="7562" fromTop="19" />
+      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:CodeTemplates/d:AddView/d:CSHTML/f:Create.tt" caret="3977" fromTop="24" />
+      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:CodeTemplates/d:AddView/d:CSHTML/f:Create.tt" caret="7472" fromTop="27" />
+      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:CodeTemplates/d:AddView/d:CSHTML/f:Create.tt" caret="3041" fromTop="18" />
+      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:CodeTemplates/d:AddView/d:CSHTML/f:Create.tt" caret="3313" fromTop="30" />
+      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:CodeTemplates/d:AddView/d:CSHTML/f:Create.tt" caret="3030" fromTop="21" />
+      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:CodeTemplates/d:AddView/d:CSHTML/f:Create.tt" caret="3024" fromTop="21" />
+      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:CodeTemplates/d:AddView/d:CSHTML/f:Create.tt" caret="2850" fromTop="15" />
+      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:CodeTemplates/d:AddView/d:CSHTML/f:Create.tt" caret="3303" fromTop="30" />
+      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:CodeTemplates/d:AddView/d:CSHTML/f:Create.tt" caret="3292" fromTop="30" />
+      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:CodeTemplates/d:AddView/d:CSHTML/f:Create.tt" caret="3248" fromTop="24" />
+      <File id="FB5B607D-08A7-435F-BC8C-05EC76D34DD6/d:CodeTemplates/d:AddView/d:CSHTML/f:Create.tt" caret="2467" fromTop="22" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>
