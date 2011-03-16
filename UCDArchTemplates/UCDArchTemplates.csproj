@@ -164,7 +164,7 @@
     <None Include="CodeTemplates\AddView\CSHTML\CreateViewModel.tt" />
     <None Include="CodeTemplates\AddView\CSHTML\EditViewModel.tt" />
     <None Include="CodeTemplates\AddView\CSHTML\ListTelerik.tt" />
-    <Compile Include="CodeTemplates\AddView\CSHTML\Create.tt" />
+    <None Include="CodeTemplates\AddView\CSHTML\Create.tt" />
     <None Include="CodeTemplates\AddView\CSHTML\Delete.tt" />
     <None Include="CodeTemplates\AddView\CSHTML\Details.tt" />
     <None Include="CodeTemplates\AddView\CSHTML\Edit.tt" />
