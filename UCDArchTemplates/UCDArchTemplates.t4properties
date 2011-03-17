@@ -71,5 +71,10 @@
       <PropertyName>Host</PropertyName>
       <Value>VisualStudio</Value>
     </TransformationPropertyValue>
+    <TransformationPropertyValue>
+      <FileName>CodeTemplates\AddController\Controller.tt</FileName>
+      <PropertyName>Host</PropertyName>
+      <Value>VisualStudio</Value>
+    </TransformationPropertyValue>
   </Values>
 </TransformationPropertyValues>

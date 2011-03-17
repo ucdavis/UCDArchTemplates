@@ -3,7 +3,8 @@
 MvcTextTemplateHost mvcHost = (MvcTextTemplateHost)(Host);
 string className = mvcHost.ControllerRootName;
 string lowerClassName = className.ToLower();
-string repository = "_" + lowerClassName + "Repository";
+string camelClassName = className.Substring(0, 1).ToLower() + className.Substring(1);
+string repository = "_" + camelClassName + "Repository";
 #>
 using System;
 using System.Linq;
@@ -20,18 +21,18 @@ namespace <#= mvcHost.Namespace #>
     {
 	    private readonly IRepository<<#= className #>> <#= repository #>;
 
-        public <#= mvcHost.ControllerName #>(IRepository<<#= className #>> <#= lowerClassName #>Repository)
+        public <#= mvcHost.ControllerName #>(IRepository<<#= className #>> <#= camelClassName #>Repository)
         {
-            <#= repository #> = <#= lowerClassName #>Repository;
+            <#= repository #> = <#= camelClassName #>Repository;
         }
     
         //
         // GET: <#= (!String.IsNullOrEmpty(mvcHost.AreaName)) ? ("/" + mvcHost.AreaName) : String.Empty #>/<#= mvcHost.ControllerRootName #>/
         public ActionResult Index()
         {
-            var <#= lowerClassName #>List = <#= repository #>.Queryable;
+            var <#= camelClassName #>List = <#= repository #>.Queryable;
 
-            return View(<#= lowerClassName #>List.ToList());
+            return View(<#= camelClassName #>List.ToList());
         }
 
 <#
@@ -41,11 +42,11 @@ if(mvcHost.AddActionMethods) {
         // GET: <#= (!String.IsNullOrEmpty(mvcHost.AreaName)) ? ("/" + mvcHost.AreaName) : String.Empty #>/<#= mvcHost.ControllerRootName #>/Details/5
         public ActionResult Details(int id)
         {
-            var <#= lowerClassName #> = <#= repository #>.GetNullableById(id);
+            var <#= camelClassName #> = <#= repository #>.GetNullableById(id);
 
-            if (<#= lowerClassName #> == null) return RedirectToAction("Index");
+            if (<#= camelClassName #> == null) return RedirectToAction("Index");
 
-            return View(<#= lowerClassName #>);
+            return View(<#= camelClassName #>);
         }
 
         //
@@ -60,15 +61,15 @@ if(mvcHost.AddActionMethods) {
         //
         // POST: <#= (!String.IsNullOrEmpty(mvcHost.AreaName)) ? ("/" + mvcHost.AreaName) : String.Empty #>/<#= mvcHost.ControllerRootName #>/Create
         [HttpPost]
-        public ActionResult Create(<#= className #> <#= lowerClassName #>)
+        public ActionResult Create(<#= className #> <#= camelClassName #>)
         {
-            var <#= lowerClassName #>ToCreate = new <#= className #>();
+            var <#= camelClassName #>ToCreate = new <#= className #>();
 
-            TransferValues(<#= lowerClassName #>, <#= lowerClassName #>ToCreate);
+            TransferValues(<#= camelClassName #>, <#= camelClassName #>ToCreate);
 
             if (ModelState.IsValid)
             {
-                <#= repository #>.EnsurePersistent(<#= lowerClassName #>ToCreate);
+                <#= repository #>.EnsurePersistent(<#= camelClassName #>ToCreate);
 
                 Message = "<#= className #> Created Successfully";
 
@@ -77,7 +78,7 @@ if(mvcHost.AddActionMethods) {
             else
             {
 				var viewModel = <#= className #>ViewModel.Create(Repository);
-                viewModel.<#= className #> = <#= lowerClassName #>;
+                viewModel.<#= className #> = <#= camelClassName #>;
 
                 return View(viewModel);
             }
@@ -87,12 +88,12 @@ if(mvcHost.AddActionMethods) {
         // GET: <#= (!String.IsNullOrEmpty(mvcHost.AreaName)) ? ("/" + mvcHost.AreaName) : String.Empty #>/<#= mvcHost.ControllerRootName #>/Edit/5
         public ActionResult Edit(int id)
         {
-            var <#= lowerClassName #> = <#= repository #>.GetNullableById(id);
+            var <#= camelClassName #> = <#= repository #>.GetNullableById(id);
 
-            if (<#= lowerClassName #> == null) return RedirectToAction("Index");
+            if (<#= camelClassName #> == null) return RedirectToAction("Index");
 
 			var viewModel = <#= className #>ViewModel.Create(Repository);
-			viewModel.<#= className #> = <#= lowerClassName #>;
+			viewModel.<#= className #> = <#= camelClassName #>;
 
 			return View(viewModel);
         }
@@ -100,17 +101,17 @@ if(mvcHost.AddActionMethods) {
         //
         // POST: <#= (!String.IsNullOrEmpty(mvcHost.AreaName)) ? ("/" + mvcHost.AreaName) : String.Empty #>/<#= mvcHost.ControllerRootName #>/Edit/5
         [HttpPost]
-        public ActionResult Edit(int id, <#= className #> <#= lowerClassName #>)
+        public ActionResult Edit(int id, <#= className #> <#= camelClassName #>)
         {
-            var <#= lowerClassName #>ToEdit = <#= repository #>.GetNullableById(id);
+            var <#= camelClassName #>ToEdit = <#= repository #>.GetNullableById(id);
 
-            if (<#= lowerClassName #>ToEdit == null) return RedirectToAction("Index");
+            if (<#= camelClassName #>ToEdit == null) return RedirectToAction("Index");
 
-            TransferValues(<#= lowerClassName #>, <#= lowerClassName #>ToEdit);
+            TransferValues(<#= camelClassName #>, <#= camelClassName #>ToEdit);
 
             if (ModelState.IsValid)
             {
-                <#= repository #>.EnsurePersistent(<#= lowerClassName #>ToEdit);
+                <#= repository #>.EnsurePersistent(<#= camelClassName #>ToEdit);
 
                 Message = "<#= className #> Edited Successfully";
 
@@ -119,7 +120,7 @@ if(mvcHost.AddActionMethods) {
             else
             {
 				var viewModel = <#= className #>ViewModel.Create(Repository);
-                viewModel.<#= className #> = <#= lowerClassName #>;
+                viewModel.<#= className #> = <#= camelClassName #>;
 
                 return View(viewModel);
             }
@@ -129,23 +130,23 @@ if(mvcHost.AddActionMethods) {
         // GET: <#= (!String.IsNullOrEmpty(mvcHost.AreaName)) ? ("/" + mvcHost.AreaName) : String.Empty #>/<#= mvcHost.ControllerRootName #>/Delete/5 
         public ActionResult Delete(int id)
         {
-			var <#= lowerClassName #> = <#= repository #>.GetNullableById(id);
+			var <#= camelClassName #> = <#= repository #>.GetNullableById(id);
 
-            if (<#= lowerClassName #> == null) return RedirectToAction("Index");
+            if (<#= camelClassName #> == null) return RedirectToAction("Index");
 
-            return View(<#= lowerClassName #>);
+            return View(<#= camelClassName #>);
         }
 
         //
         // POST: <#= (!String.IsNullOrEmpty(mvcHost.AreaName)) ? ("/" + mvcHost.AreaName) : String.Empty #>/<#= mvcHost.ControllerRootName #>/Delete/5
         [HttpPost]
-        public ActionResult Delete(int id, <#= className #> <#= lowerClassName #>)
+        public ActionResult Delete(int id, <#= className #> <#= camelClassName #>)
         {
-			var <#= lowerClassName #>ToDelete = <#= repository #>.GetNullableById(id);
+			var <#= camelClassName #>ToDelete = <#= repository #>.GetNullableById(id);
 
-            if (<#= lowerClassName #>ToDelete == null) return RedirectToAction("Index");
+            if (<#= camelClassName #>ToDelete == null) return RedirectToAction("Index");
 
-            <#= repository #>.Remove(<#= lowerClassName #>ToDelete);
+            <#= repository #>.Remove(<#= camelClassName #>ToDelete);
 
             Message = "<#= className #> Removed Successfully";
 
