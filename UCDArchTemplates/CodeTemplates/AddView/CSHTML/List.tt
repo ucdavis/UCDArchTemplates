@@ -78,8 +78,9 @@ foreach (ModelProperty property in properties) {
 		</tr>
 	</thead>
 	<tbody>
+@{ var odd = false; }
 @foreach (var item in Model) {
-		<tr>
+		<tr class="@(odd ? "odd": "even")">
 <#
 string pkName = GetPrimaryKeyName(mvcHost.ViewDataType);
 if (pkName != null) {
@@ -111,6 +112,7 @@ foreach (ModelProperty property in properties) {
 }
 #>
 		</tr>
+		odd = !odd;
 }
 	</tbody>
 </table>
