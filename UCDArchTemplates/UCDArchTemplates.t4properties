@@ -12,11 +12,6 @@
       <Value>VisualStudio</Value>
     </TransformationPropertyValue>
     <TransformationPropertyValue>
-      <FileName>CodeTemplates\AddView\CSHTML\Delete.tt</FileName>
-      <PropertyName>Host</PropertyName>
-      <Value>VisualStudio</Value>
-    </TransformationPropertyValue>
-    <TransformationPropertyValue>
       <FileName>CodeTemplates\AddView\AspxCSharp\Edit.tt</FileName>
       <PropertyName>Host</PropertyName>
       <Value>VisualStudio</Value>
@@ -52,12 +47,12 @@
       <Value>VisualStudio</Value>
     </TransformationPropertyValue>
     <TransformationPropertyValue>
-      <FileName>CodeTemplates\AddView\CSHTML\Create.tt</FileName>
+      <FileName>CodeTemplates\AddController\Controller.tt</FileName>
       <PropertyName>Host</PropertyName>
       <Value>VisualStudio</Value>
     </TransformationPropertyValue>
     <TransformationPropertyValue>
-      <FileName>CodeTemplates\AddController\Controller.tt</FileName>
+      <FileName>CodeTemplates\AddView\CSHTML\EditViewModel.tt</FileName>
       <PropertyName>Host</PropertyName>
       <Value>VisualStudio</Value>
     </TransformationPropertyValue>
@@ -67,12 +62,17 @@
       <Value>VisualStudio</Value>
     </TransformationPropertyValue>
     <TransformationPropertyValue>
+      <FileName>CodeTemplates\AddView\CSHTML\Create.tt</FileName>
+      <PropertyName>Host</PropertyName>
+      <Value>VisualStudio</Value>
+    </TransformationPropertyValue>
+    <TransformationPropertyValue>
       <FileName>CodeTemplates\AddView\CSHTML\Edit.tt</FileName>
       <PropertyName>Host</PropertyName>
       <Value>VisualStudio</Value>
     </TransformationPropertyValue>
     <TransformationPropertyValue>
-      <FileName>CodeTemplates\AddView\CSHTML\EditViewModel.tt</FileName>
+      <FileName>CodeTemplates\AddView\CSHTML\Delete.tt</FileName>
       <PropertyName>Host</PropertyName>
       <Value>VisualStudio</Value>
     </TransformationPropertyValue>

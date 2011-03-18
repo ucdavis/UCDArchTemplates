@@ -109,7 +109,7 @@ foreach (ModelProperty property in GetModelProperties(mvcHost.ViewDataType)) {
 		<li>
 			@* For the clear and submit buttons an empty label is required. Example: <label>&nbsp;</label> *@
 			<label>&nbsp;</label>
-			<input class="button" type="submit" value="Create" /> | <a href="#" title="Cancel">Cancel</a>
+			<input class="button" type="submit" value="Create" /> | @Html.ActionLink("Cancel", "Index")
 		</li>
 
 	</ul>
