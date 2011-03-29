@@ -86,5 +86,15 @@
       <PropertyName>Host</PropertyName>
       <Value>VisualStudio</Value>
     </TransformationPropertyValue>
+    <TransformationPropertyValue>
+      <FileName>CodeTemplates\AddView\AspxCSharp\ListDatatables.tt</FileName>
+      <PropertyName>Host</PropertyName>
+      <Value>VisualStudio</Value>
+    </TransformationPropertyValue>
+    <TransformationPropertyValue>
+      <FileName>CodeTemplates\AddView\CSHTML\ListDatatables.tt</FileName>
+      <PropertyName>Host</PropertyName>
+      <Value>VisualStudio</Value>
+    </TransformationPropertyValue>
   </Values>
 </TransformationPropertyValues>

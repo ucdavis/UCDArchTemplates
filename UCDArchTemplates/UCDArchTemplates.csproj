@@ -152,6 +152,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="CodeTemplates\AddController\Controller.tt" />
+    <None Include="CodeTemplates\AddView\AspxCSharp\ListDatatables.tt" />
     <None Include="CodeTemplates\AddView\AspxCSharp\CreateViewModel.tt" />
     <None Include="CodeTemplates\AddView\AspxCSharp\EditViewModel.tt" />
     <None Include="CodeTemplates\AddView\AspxCSharp\ListTelerik.tt" />
@@ -161,6 +162,7 @@
     <None Include="CodeTemplates\AddView\AspxCSharp\Edit.tt" />
     <None Include="CodeTemplates\AddView\AspxCSharp\Empty.tt" />
     <None Include="CodeTemplates\AddView\AspxCSharp\List.tt" />
+    <None Include="CodeTemplates\AddView\CSHTML\ListDatatables.tt" />
     <None Include="CodeTemplates\AddView\CSHTML\CreateViewModel.tt" />
     <None Include="CodeTemplates\AddView\CSHTML\EditViewModel.tt" />
     <None Include="CodeTemplates\AddView\CSHTML\ListTelerik.tt" />
