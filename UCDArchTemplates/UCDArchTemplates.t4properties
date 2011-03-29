@@ -2,31 +2,6 @@
 <TransformationPropertyValues xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Values>
     <TransformationPropertyValue>
-      <FileName>CodeTemplates\AddView\AspxCSharp\Create.tt</FileName>
-      <PropertyName>Host</PropertyName>
-      <Value>VisualStudio</Value>
-    </TransformationPropertyValue>
-    <TransformationPropertyValue>
-      <FileName>CodeTemplates\AddView\AspxCSharp\Delete.tt</FileName>
-      <PropertyName>Host</PropertyName>
-      <Value>VisualStudio</Value>
-    </TransformationPropertyValue>
-    <TransformationPropertyValue>
-      <FileName>CodeTemplates\AddView\AspxCSharp\Edit.tt</FileName>
-      <PropertyName>Host</PropertyName>
-      <Value>VisualStudio</Value>
-    </TransformationPropertyValue>
-    <TransformationPropertyValue>
-      <FileName>CodeTemplates\AddView\AspxCSharp\CreateViewModel.tt</FileName>
-      <PropertyName>Host</PropertyName>
-      <Value>VisualStudio</Value>
-    </TransformationPropertyValue>
-    <TransformationPropertyValue>
-      <FileName>CodeTemplates\AddView\AspxCSharp\EditViewModel.tt</FileName>
-      <PropertyName>Host</PropertyName>
-      <Value>VisualStudio</Value>
-    </TransformationPropertyValue>
-    <TransformationPropertyValue>
       <FileName>CodeTemplates\AddView\CSHTML\ListTelerik.tt</FileName>
       <PropertyName>Host</PropertyName>
       <Value>VisualStudio</Value>
@@ -78,6 +53,36 @@
     </TransformationPropertyValue>
     <TransformationPropertyValue>
       <FileName>CodeTemplates\AddView\CSHTML\List.tt</FileName>
+      <PropertyName>Host</PropertyName>
+      <Value>VisualStudio</Value>
+    </TransformationPropertyValue>
+    <TransformationPropertyValue>
+      <FileName>CodeTemplates\AddView\AspxCSharp\Create.tt</FileName>
+      <PropertyName>Host</PropertyName>
+      <Value>VisualStudio</Value>
+    </TransformationPropertyValue>
+    <TransformationPropertyValue>
+      <FileName>CodeTemplates\AddView\AspxCSharp\CreateViewModel.tt</FileName>
+      <PropertyName>Host</PropertyName>
+      <Value>VisualStudio</Value>
+    </TransformationPropertyValue>
+    <TransformationPropertyValue>
+      <FileName>CodeTemplates\AddView\AspxCSharp\Edit.tt</FileName>
+      <PropertyName>Host</PropertyName>
+      <Value>VisualStudio</Value>
+    </TransformationPropertyValue>
+    <TransformationPropertyValue>
+      <FileName>CodeTemplates\AddView\AspxCSharp\EditViewModel.tt</FileName>
+      <PropertyName>Host</PropertyName>
+      <Value>VisualStudio</Value>
+    </TransformationPropertyValue>
+    <TransformationPropertyValue>
+      <FileName>CodeTemplates\AddView\AspxCSharp\Delete.tt</FileName>
+      <PropertyName>Host</PropertyName>
+      <Value>VisualStudio</Value>
+    </TransformationPropertyValue>
+    <TransformationPropertyValue>
+      <FileName>CodeTemplates\AddView\AspxCSharp\Details.tt</FileName>
       <PropertyName>Host</PropertyName>
       <Value>VisualStudio</Value>
     </TransformationPropertyValue>
