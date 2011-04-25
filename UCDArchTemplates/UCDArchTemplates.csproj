@@ -83,7 +83,6 @@
   <ItemGroup>
     <Compile Include="Controllers\ApplicationController.cs" />
     <Compile Include="Controllers\CustomerController.cs" />
-    <Compile Include="Controllers\TestController.cs" />
     <Compile Include="Helpers\CustomGridBuilder.cs" />
     <Compile Include="Helpers\FakeDBContext.cs" />
     <Compile Include="Helpers\FakeServiceLocator.cs" />
