@@ -66,9 +66,7 @@ if(mvcHost.IsPartialView) {
 	PushIndent("    ");
 }
 #>
-<p>
-	<%: Html.ActionLink("Create New", "Create") %>
-</p>
+
 <table class="dt-table">
 	<thead>
 		<tr>
