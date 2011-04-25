@@ -56,10 +56,15 @@ if (!String.IsNullOrEmpty(mvcHost.MasterPageFile)) {
 	PushIndent("    ");
 }
 #>
-<p>
-	@Html.ActionLink("Create New", "Create")
-</p>
-<table>
+
+@section SubNav
+{
+	<ul class="navigation">
+		<li>@Html.ActionLink("Create New", "Create")</li>
+	</ul>
+}
+
+<table class="dt-table">
 	<thead>
 		<tr>
 			<th></th>
