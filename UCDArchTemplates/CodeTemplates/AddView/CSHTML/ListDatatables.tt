@@ -128,7 +128,7 @@ foreach (ModelProperty property in properties) {
 	}
 }
 #>
-
+		<#
 		if (pkName != null) {
 		#>
 					<td>
