@@ -138,7 +138,7 @@ static Type[] bindableNonPrimitiveTypes = new[] {
 string GetUnderlyingModelName(Type type)
 {
 	if (type.Name.EndsWith("ViewModel") == false) { throw new ArgumentException("This template should be called with a viewmodel class"); }
-	return type.Name.Substring(0, "ViewModel".Length - 1);
+	return type.Name.Substring(0, type.Name.Length - "ViewModel".Length);
 }
 
 // Call this to get the list of properties in the model. Change this to modify or add your
