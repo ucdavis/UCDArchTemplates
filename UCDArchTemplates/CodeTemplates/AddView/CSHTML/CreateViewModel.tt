@@ -56,6 +56,14 @@ if (!String.IsNullOrEmpty(mvcHost.MasterPageFile)) {
     PushIndent("    ");
 }
 #>
+
+@section SubNav
+{
+	<ul class="navigation">
+		<li>@Html.ActionLink("Back to List", "Index")</li>
+	</ul>
+}
+
 @using (Html.BeginForm()) {
 	@Html.AntiForgeryToken()
 	@Html.ValidationSummary(true)
@@ -106,9 +114,6 @@ Example: Dinosaur 1  *@
 	</section>
 }
 
-<div>
-	@Html.ActionLink("Back to List", "Index")
-</div>
 <#
 // The following code closes the asp:Content tag used in the case of a master page and the body and html tags in the case of a regular view page
 #>
