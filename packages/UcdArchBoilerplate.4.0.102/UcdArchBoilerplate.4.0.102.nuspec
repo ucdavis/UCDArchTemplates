@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>UcdArchBoilerplate</id>
+    <version>4.0.102</version>
+    <authors>Scott Kirkland</authors>
+    <owners>Scott Kirkland</owners>
+    <licenseUrl>https://github.com/ucdavis/UCDArch/blob/master/LICENSE.txt</licenseUrl>
+    <projectUrl>https://github.com/ucdavis/UCDArch</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Everything you need to start an ASPNET MVC project w/ UCDArch and the standard boilerplate styles</description>
+    <summary>Adds twitter bootstrap styling, datatables custom styling, style/script bundles, and a sample layout page website</summary>
+    <language>en-US</language>
+    <dependencies>
+      <dependency id="Twitter.Bootstrap" version="2.2.2" />
+      <dependency id="UcdArch.Mvc" version="4.0.95" />
+    </dependencies>
+  </metadata>
+</package>

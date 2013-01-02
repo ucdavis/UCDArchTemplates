@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>UcdArch</id>
+    <version>4.0.102</version>
+    <title />
+    <authors>Scott Kirkland</authors>
+    <owners>Scott Kirkland</owners>
+    <projectUrl>https://github.com/ucdavis/UCDArch</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Core UcdArch dll.  If you need additional functionality look at the UcdArch.NHibernate and UcdArch.Mvc packages</description>
+    <copyright>Scott Kirkland</copyright>
+    <language>en-US</language>
+    <tags>ASPNETMVC</tags>
+  </metadata>
+</package>
