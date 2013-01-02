@@ -1,0 +1,41 @@
+﻿@model UcdArchTemplates.Web.Models.Customer
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+
+@section SubNav
+{
+	<ul class="navigation">
+					<li>@Html.ActionLink("Edit", "Edit", new { id=Model.Id }) </li>
+			<li>@Html.ActionLink("Back to List", "Index")</li>
+			</ul>
+}
+
+<section class="display-form ui-corner-all">
+    <header class="ui-corner-top">Customer</header>
+	<ul>
+		<li>
+			<div class="display-label">CompanyName</div>
+			<div class="display-details">@Model.CompanyName</div>
+		</li>
+		<li>
+			<div class="display-label">ContactName</div>
+			<div class="display-details">@Model.ContactName</div>
+		</li>
+		<li>
+			<div class="display-label">Country</div>
+			<div class="display-details">@Model.Country</div>
+		</li>
+		<li>
+			<div class="display-label">Fax</div>
+			<div class="display-details">@Model.Fax</div>
+		</li>
+	</ul>
+
+	<footer class="ui-corner-bottom"></footer>
+
+</section>

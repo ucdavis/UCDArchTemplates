@@ -168,11 +168,13 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="ComponentRegistrar.cs" />
     <Compile Include="Controllers\ApplicationController.cs" />
+    <Compile Include="Controllers\CustomerController.cs" />
     <Compile Include="Controllers\SampleController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\CustomerHashRepository.cs" />
     <Compile Include="Models\Order.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -429,6 +431,7 @@
     <Content Include="Views\Sample\Form.cshtml" />
     <Content Include="Views\Sample\DisplayForm.cshtml" />
     <Content Include="Views\Sample\DataTable.cshtml" />
+    <Content Include="Views\Customer\Details.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
