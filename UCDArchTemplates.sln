@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UCDArchTemplates", "UCDArchTemplates\UCDArchTemplates.csproj", "{FB5B607D-08A7-435F-BC8C-05EC76D34DD6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UCDArchTemplates.Test", "UCDArchTemplates.Test\UCDArchTemplates.Test.csproj", "{1775053E-D290-4591-8399-EDB363B754C6}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,10 +13,6 @@ Global
 		{FB5B607D-08A7-435F-BC8C-05EC76D34DD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FB5B607D-08A7-435F-BC8C-05EC76D34DD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FB5B607D-08A7-435F-BC8C-05EC76D34DD6}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1775053E-D290-4591-8399-EDB363B754C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1775053E-D290-4591-8399-EDB363B754C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1775053E-D290-4591-8399-EDB363B754C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1775053E-D290-4591-8399-EDB363B754C6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
