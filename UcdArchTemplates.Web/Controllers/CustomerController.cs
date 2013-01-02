@@ -2,6 +2,7 @@
 using System.Web.Mvc;
 using UCDArch.Core.PersistanceSupport;
 using UCDArch.Core.Utils;
+using UCDArch.Web.Attributes;
 using UcdArchTemplates.Web.Models;
 
 namespace UcdArchTemplates.Web.Controllers
@@ -9,6 +10,7 @@ namespace UcdArchTemplates.Web.Controllers
     /// <summary>
     /// Controller for the Customer class
     /// </summary>
+    [HandleTransactionsManually]
     public class CustomerController : ApplicationController
     {
         private readonly IRepository<Customer> _customerRepository;
@@ -18,10 +20,10 @@ namespace UcdArchTemplates.Web.Controllers
             _customerRepository = new CustomerHashRepository();
         }
 
-        public CustomerController(IRepository<Customer> customerRepository)
-        {
-            _customerRepository = customerRepository;
-        }
+        //public CustomerController(IRepository<Customer> customerRepository)
+        //{
+        //    _customerRepository = customerRepository;
+        //}
 
         //
         // GET: /Customer/
