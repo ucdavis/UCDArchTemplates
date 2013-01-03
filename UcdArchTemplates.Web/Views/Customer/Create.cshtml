@@ -1,0 +1,62 @@
+﻿@model UcdArchTemplates.Web.Models.Customer
+
+@{
+	ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+
+@section SubNav
+{
+	<ul class="navigation">
+		<li>@Html.ActionLink("Back to List", "Index")</li>
+	</ul>
+}
+
+@using (Html.BeginForm()) {
+	@Html.AntiForgeryToken()
+	@Html.ValidationSummary(true)
+
+	<fieldset>
+        <legend>Customer</legend>
+		<div class="well">
+			@*<p>Be specific so the user understands what exactly you are looking for.  Example: After Dinosaur 1 moves out of his/her parents' den what will Dinosaur 1 do?  We need to know his employment plan, feeding area, as well as living situation.  This information will not be sold or given to carnivores.</p>*@
+			<p>All required fields are in <strong>bold</strong> and have a red <span class="required">*</span> next to the field label.</p>
+		</div>
+		<div class="control-group">
+			<label class="control-label" for="CompanyName"><strong>CompanyName</strong><span class="required">*</span></label>
+            <div class="controls">
+				@Html.EditorFor(model => model.CompanyName)
+				@Html.ValidationMessageFor(model => model.CompanyName)
+            </div>
+        </div>
+		<div class="control-group">
+			<label class="control-label" for="ContactName"><strong>ContactName</strong><span class="required">*</span></label>
+            <div class="controls">
+				@Html.EditorFor(model => model.ContactName)
+				@Html.ValidationMessageFor(model => model.ContactName)
+            </div>
+        </div>
+		<div class="control-group">
+			<label class="control-label" for="Country">Country</label>
+            <div class="controls">
+				@Html.EditorFor(model => model.Country)
+				@Html.ValidationMessageFor(model => model.Country)
+            </div>
+        </div>
+		<div class="control-group">
+			<label class="control-label" for="Fax">Fax</label>
+            <div class="controls">
+				@Html.EditorFor(model => model.Fax)
+				@Html.ValidationMessageFor(model => model.Fax)
+            </div>
+        </div>
+        <div class="form-actions">
+            <button type="submit" class="btn btn-primary">Save changes</button>
+            <button type="button" class="btn btn-link">Cancel</button>
+        </div>
+    </fieldset>
+}
+
+
