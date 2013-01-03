@@ -62,9 +62,6 @@ if (!String.IsNullOrEmpty(mvcHost.MasterPageFile)) {
 	<li>@Html.ActionLink("Back to List", "Index")</li>
 }
 
-<#= mvcHost.ControllerName  #>
-<#= mvcHost.ControllerRootName  #>
-
 <form method="POST" class="form-horizontal well-small" novalidate="novalidate">
 	@Html.AntiForgeryToken()
 	@Html.ValidationSummary(true)
