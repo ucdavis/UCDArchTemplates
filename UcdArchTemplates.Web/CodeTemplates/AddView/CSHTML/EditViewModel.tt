@@ -59,63 +59,43 @@ if (!String.IsNullOrEmpty(mvcHost.MasterPageFile)) {
 
 @section SubNav
 {
-	<ul class="navigation">
-		<li>@Html.ActionLink("Back to List", "Index")</li>
-	</ul>
+	<li>@Html.ActionLink("Back to List", "Index")</li>
 }
 
 @using (Html.BeginForm()) {
 	@Html.AntiForgeryToken()
 	@Html.ValidationSummary(true)
-<section class="ui-corner-all">
-@* Legend is required if you have more than one widget/unit to help the user understand what is being asked of them.
-Example: Dinosaur 1  *@
-	<header class="ui-corner-top"><#= mvcHost.ViewDataType.Name #></header>
 
-	<div class="section-contents">
-
-		<div class="section-text">
-
-			@*<h4>Form Header</h4>*@
+	<fieldset>
+        <legend><#= mvcHost.ViewDataType.Name #></legend>
+		<div class="well">
 			@*<p>Be specific so the user understands what exactly you are looking for.  Example: After Dinosaur 1 moves out of his/her parents' den what will Dinosaur 1 do?  We need to know his employment plan, feeding area, as well as living situation.  This information will not be sold or given to carnivores.</p>*@
 			<p>All required fields are in <strong>bold</strong> and have a red <span class="required">*</span> next to the field label.</p>
-
 		</div>
-
-		<ul>
-	<#
-	foreach (ModelProperty property in GetModelProperties(mvcHost.ViewDataType)) {
-		if (property.IsPrimaryKey) {
-	#>
-			@Html.HiddenFor(model => model.<#= property.Name #>)
-	<#
-		} else if (!property.IsReadOnly) {
-	#>
-			<li>
-				<div class="editor-label<# if (property.IsRequired) { #> required<# }#>">
-					@Html.LabelFor(model => model.<#= property.Path #>)<# if (property.IsRequired) { #><span>*</span><# }#> 
-				</div>
-				<div class="editor-field">
-					@Html.EditorFor(model => model.<#= property.Path #>)
-					@Html.ValidationMessageFor(model => model.<#= property.Path #>)
-				</div>
-			</li>
-	<#
-		}
+<#
+foreach (ModelProperty property in GetModelProperties(mvcHost.ViewDataType)) {
+	if (property.IsPrimaryKey) {
+#>
+		@Html.HiddenFor(model => model.<#= property.Path #>)
+<#
+	} else if (!property.IsReadOnly) {
+#>
+		<div class="control-group">
+			<label class="control-label" for="<#= property.Path.Replace('.', '_') #>"><# if (property.IsRequired) { #><strong><#= property.Name #></strong><span class="required">*</span><# } else { #><#= property.Name #><# } #></label>
+            <div class="controls">
+				@Html.EditorFor(model => model.<#= property.Path #>)
+				@Html.ValidationMessageFor(model => model.<#= property.Path #>)
+            </div>
+        </div>
+<#
 	}
-	#>
-			<li>
-				@* For the clear and submit buttons an empty label is required. Example: <label>&nbsp;</label> *@
-				<label>&nbsp;</label>
-				<input class="button" type="submit" value="Edit" /> | @Html.ActionLink("Cancel", "Index")
-			</li>
-		</ul>
-
-	</div>
-
-	<footer class="ui-corner-bottom"></footer>
-	
-</section>
+}
+#>
+        <div class="form-actions">
+            <button type="submit" class="btn btn-primary">Save changes</button>
+            <button type="button" class="btn btn-link">Cancel</button>
+        </div>
+    </fieldset>
 }
 
 <#
