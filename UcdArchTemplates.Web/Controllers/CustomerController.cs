@@ -50,8 +50,8 @@ namespace UcdArchTemplates.Web.Controllers
         public ActionResult Create()
         {
             var viewModel = CustomerViewModel.Create(Repository);
-
-            return View(viewModel.Customer);
+            
+            return View(viewModel);
         }
 
         //

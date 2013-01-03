@@ -59,9 +59,7 @@ if (!String.IsNullOrEmpty(mvcHost.MasterPageFile)) {
 
 @section SubNav
 {
-	<ul class="navigation">
-		<li>@Html.ActionLink("Back to List", "Index")</li>
-	</ul>
+	<li>@Html.ActionLink("Back to List", "Index")</li>
 }
 
 @using (Html.BeginForm()) {
