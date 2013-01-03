@@ -131,6 +131,8 @@ namespace UcdArchTemplates.Web.Controllers
             if (customer == null) return RedirectToAction("Index");
 
             return View(customer);
+
+            
         }
 
         //
