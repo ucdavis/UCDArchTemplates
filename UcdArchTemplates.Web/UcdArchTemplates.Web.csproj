@@ -342,7 +342,6 @@
     <Content Include="CodeTemplates\AddView\CSHTML\Empty.tt" />
     <Content Include="CodeTemplates\AddView\CSHTML\List.tt" />
     <Content Include="CodeTemplates\AddView\CSHTML\ListDatatables.tt" />
-    <Content Include="CodeTemplates\AddView\CSHTML\ListTelerik.tt" />
     <Content Include="robots.txt" />
     <Content Include="Scripts\DataTables-1.9.4\docs\media\js\doc.js" />
     <Content Include="Scripts\DataTables-1.9.4\docs\media\js\jquery.js" />
