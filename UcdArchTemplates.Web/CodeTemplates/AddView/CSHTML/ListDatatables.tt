@@ -64,6 +64,7 @@ if (!String.IsNullOrEmpty(mvcHost.MasterPageFile)) {
 	<li>@Html.ActionLink("Create New", "Create")</li>
 }
 
+<# List<ModelProperty> properties = GetModelProperties(mvcHost.ViewDataType); #>
 @section AdditionalScripts
 {
     @Scripts.Render("~/bundles/datatables")
@@ -73,7 +74,7 @@ if (!String.IsNullOrEmpty(mvcHost.MasterPageFile)) {
             $(".table").dataTable({
                 "aaSorting": [[ 1, "asc" ]], //Default sort on second column
                 "aoColumnDefs": [
-                    { 'bSortable': false, 'aTargets': [0, 5] } //Disables sort on icon columns
+                    { 'bSortable': false, 'aTargets': [0, <#= properties.Where(p=>!p.IsPrimaryKey).Count() + 1 #>] } //Disables sort on icon columns
                 ]
             });
         });
@@ -86,7 +87,6 @@ if (!String.IsNullOrEmpty(mvcHost.MasterPageFile)) {
 		<tr>
 			<th></th>
 <#
-List<ModelProperty> properties = GetModelProperties(mvcHost.ViewDataType);
 foreach (ModelProperty property in properties) {
 	if (!property.IsPrimaryKey) {
 #>
