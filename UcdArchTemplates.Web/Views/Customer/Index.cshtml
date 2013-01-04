@@ -20,10 +20,14 @@
 
     <script type="text/javascript">
         $(function () {
-            $(".table").dataTable();
+            $(".table").dataTable({
+                "aaSorting": [[ 1, "asc" ]], //Default sort on second column
+                "aoColumnDefs": [
+                    { 'bSortable': false, 'aTargets': [0, 5] } //Disables sort on icon columns
+                ]
+            });
         });
-    </script>
-    
+    </script>    
 }
 
 
