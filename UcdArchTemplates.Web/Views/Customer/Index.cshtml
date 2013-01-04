@@ -7,12 +7,27 @@
 <h2>Index</h2>
 
 
+@Styles.Render("~/Content/DataTables-1.9.4/media/css/dataTables")
+
 @section SubNav
 {
 	<li>@Html.ActionLink("Create New", "Create")</li>
 }
 
-<table class="table table-striped table-hover">
+@section AdditionalScripts
+{
+    @Scripts.Render("~/bundles/datatables")
+
+    <script type="text/javascript">
+        $(function () {
+            $(".table").dataTable();
+        });
+    </script>
+    
+}
+
+
+<table class="table table-striped table-bordered table-hover">
 	<thead>
 		<tr>
 			<th></th>

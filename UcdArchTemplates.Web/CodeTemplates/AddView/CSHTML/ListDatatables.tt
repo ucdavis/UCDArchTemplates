@@ -57,16 +57,27 @@ if (!String.IsNullOrEmpty(mvcHost.MasterPageFile)) {
 }
 #>
 
+@Styles.Render("~/Content/DataTables-1.9.4/media/css/dataTables")
 
 @section SubNav
 {
-	<ul class='navigation'>
-		<li>@Html.ActionLink("Create New", "Create")</li>
-	</ul>
+	<li>@Html.ActionLink("Create New", "Create")</li>
+}
+
+@section AdditionalScripts
+{
+    @Scripts.Render("~/bundles/datatables")
+
+    <script type="text/javascript">
+        $(function () {
+            $(".table").dataTable();
+        });
+    </script>
+    
 }
 
 
-<table class='dt-table'>
+<table class="table table-striped table-bordered table-hover">
 	<thead>
 		<tr>
 			<th></th>
@@ -82,38 +93,26 @@ foreach (ModelProperty property in properties) {
 	}
 }
 #>
-
 			<th></th>
-
 		</tr>
 	</thead>
 	<tbody>
-@{ var odd = false; }
 @foreach (var item in Model) {
-		<tr class="@(odd ? "odd": "even")">
+		<tr>
 <#
 string pkName = GetPrimaryKeyName(mvcHost.ViewDataType);
 if (pkName != null) {
 #>
 			<td>
-				<a href='@Url.Action("Details", new {id=item.<#= pkName #>})'>
-					<img src='@Url.Image("details.png")' />
-				</a>
-				<a href='@Url.Action("Edit", new {id=item.<#= pkName #>})'>
-					<img src='@Url.Image("edit.png")' />
-				</a>
+				<a href='@Url.Action("Details", new {id=item.Id})' class="btn" title="Details"><i class="icon-file"></i></a>
+				<a href='@Url.Action("Edit", new {id=item.Id})' class="btn" title="Edit"><i class="icon-edit"></i></a>
 			</td>
 <#
 } else {
 #>
 			<td>
-
-				<a href='@Url.Action("Details", new { /* id=item.<#=pkName #> */ })'>
-					<img src='@Url.Image("details.png")' />
-				</a>
-				<a href='@Url.Action("Edit", new { /* id=item.<#= pkName #> */ })'>
-					<img src='@Url.Image("edit.png")' />
-				</a>
+				<a href='@Url.Action("Details", new { /* id=item.<#=pkName #> */ })' class="btn" title="Details"><i class="icon-file"></i></a>
+				<a href='@Url.Action("Edit", new { /* id=item.<#= pkName #> */ })' class="btn" title="Edit"><i class="icon-edit"></i></a>
 			</td>
 <#
 }
@@ -128,40 +127,25 @@ foreach (ModelProperty property in properties) {
 	}
 }
 #>
-		<#
-		if (pkName != null) {
-		#>
-					<td>
-						<a href='@Url.Action("Delete", new { id = item.<#= pkName #> })'>
-							<img src='@Url.Image("delete.png")' />
-						</a>
-					</td>
-		<#
-		} else {
-		#>
-					<td>
-						<a href='@Url.Action("Delete", new { /* id = item.<#= pkName #> */ })'>
-							<img src='@Url.Image("delete.png")' />
-						</a>
-					</td>
-		<#
-		}
-		#>
-
+<#
+if (pkName != null) {
+#>
+			<td>
+				<a href='@Url.Action("Delete", new {id=item.Id})' class="btn" title="Remove"><i class="icon-remove"></i></a>
+			</td>
+<#
+} else {
+#>
+			<td>
+				<a href='@Url.Action("Delete", new { /* id = item.<#= pkName #> */ })' class="btn" title="Remove"><i class="icon-remove"></i></a>
+			</td>
+<#
+}
+#>
 		</tr>
-		odd = !odd;
 }
 	</tbody>
 </table>
-
-<script type="text/javascript">
-	$(function () {
-		$(".dt-table").dataTable({
-			"bJQueryUI": true //Use the jquery ui skin
-			//"aaSorting": [[ 3, "asc" ]] //Add default sorting
-		});
-	});
-</script>
 <#
 // The following code closes the asp:Content tag used in the case of a master page and the body and html tags in the case of a regular view page
 #>
