@@ -13,7 +13,7 @@
         <language>en-US</language>
     </metadata>
     <files>
-      <file src="..\UCDArchTemplates\CodeTemplates\**.*" target="Content/CodeTemplates" />
+      <file src="..\UCDArchTemplates.Web\CodeTemplates\**.*" target="Content/CodeTemplates" />
       <file src="Tools\install.ps1" target="Tools\install.ps1" />
     </files>
 </package>
