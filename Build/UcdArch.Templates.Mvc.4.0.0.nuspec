@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <id>UcdArch.Templates.Mvc</id>
+        <version>4.0.0</version>
+        <authors>Scott Kirkland</authors>
+        <owners>Scott Kirkland</owners>
+        <licenseUrl>https://github.com/ucdavis/UCDArch/blob/master/LICENSE.txt</licenseUrl>
+        <projectUrl>https://github.com/srkirkland/UCDArchTemplates</projectUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>Adds C# ASP.NET MVC Code Templates for use in customizing Add View and Add Controller scaffolding.</description>
+        <summary>Adds C# ASP.NET MVC Code Templates for use in customizing Add View and Add Controller scaffolding. Intended to work well with the UCDArch MVC framework library.</summary>
+        <language>en-US</language>
+    </metadata>
+    <files>
+        <file src="UcdArchMvcTemplates\Tools\install.ps1" target="Tools\install.ps1" />
+    </files>
+</package>
